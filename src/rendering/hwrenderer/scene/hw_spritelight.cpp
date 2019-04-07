@@ -52,10 +52,10 @@ T smoothstep(const T edge0, const T edge1, const T x)
 void HWDrawInfo::GetDynSpriteLight(AActor *self, float x, float y, float z, FLightNode *node, int portalgroup, float *out)
 {
 	FDynamicLight *light;
-	float frac, lr, lg, lb;
+	float frac, lr, lg, lb, la;
 	float radius;
 	
-	out[0] = out[1] = out[2] = 0.f;
+	out[0] = out[1] = out[2] = out[3] = 0.f;
 	// Go through both light lists
 	while (node)
 	{
@@ -109,6 +109,7 @@ void HWDrawInfo::GetDynSpriteLight(AActor *self, float x, float y, float z, FLig
 					lr = light->GetRed() / 255.0f;
 					lg = light->GetGreen() / 255.0f;
 					lb = light->GetBlue() / 255.0f;
+					la = light->GetBrightness();
 					if (light->IsSubtractive())
 					{
 						float bright = (float)FVector3(lr, lg, lb).Length();
@@ -121,6 +122,7 @@ void HWDrawInfo::GetDynSpriteLight(AActor *self, float x, float y, float z, FLig
 					out[0] += lr * frac;
 					out[1] += lg * frac;
 					out[2] += lb * frac;
+					out[3] = MIN(1.f, MIN(out[3], la * frac));
 				}
 			}
 		}

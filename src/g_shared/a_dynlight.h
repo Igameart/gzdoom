@@ -73,6 +73,8 @@ public:
 	void SetSpotInnerAngle(double angle) { m_spotInnerAngle = angle; }
 	void SetSpotOuterAngle(double angle) { m_spotOuterAngle = angle; }
 	static void SetAttenuationForLevel(bool);
+	void SetBrightness(float brightness) { m_brightness = brightness; }
+	float GetBrightness() const { return (m_brightness < 0.f) ? 1.f : m_brightness; }
 
 	void OrderIntensities()
 	{
@@ -188,6 +190,7 @@ struct FDynamicLight
 	int GetBlue() const { return pArgs[LIGHT_BLUE]; }
 	int GetIntensity() const { return pArgs[LIGHT_INTENSITY]; }
 	int GetSecondaryIntensity() const { return pArgs[LIGHT_SECONDARY_INTENSITY]; }
+	float GetBrightness() const { return (m_brightness < 0.f) ? 1.f : m_brightness; }
 
 	bool IsSubtractive() const { return !!((*pLightFlags) & LF_SUBTRACTIVE); }
 	bool IsAdditive() const { return !!((*pLightFlags) & LF_ADDITIVE); }

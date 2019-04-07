@@ -146,9 +146,9 @@ void GLSprite::DrawSprite(HWDrawInfo *di, FRenderState &state, bool translucent)
 		{
 			if (dynlightindex == -1)	// only set if we got no light buffer index. This covers all cases where sprite lighting is used.
 			{
-				float out[3];
+				float out[4];
 				di->GetDynSpriteLight(gl_light_sprites ? actor : nullptr, gl_light_particles ? particle : nullptr, out);
-				state.SetDynLight(out[0], out[1], out[2]);
+				state.SetDynLight(out[0], out[1], out[2], out[3]);
 			}
 		}
 		sector_t *cursec = actor ? actor->Sector : particle ? particle->subsector->sector : nullptr;
@@ -298,7 +298,7 @@ void GLSprite::DrawSprite(HWDrawInfo *di, FRenderState &state, bool translucent)
 	state.SetObjectColor(0xffffffff);
 	state.SetAddColor(0);
 	state.EnableTexture(true);
-	state.SetDynLight(0, 0, 0);
+	state.SetDynLight(0, 0, 0, 1);
 }
 
 //==========================================================================

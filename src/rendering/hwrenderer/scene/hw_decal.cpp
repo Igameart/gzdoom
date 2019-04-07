@@ -53,10 +53,10 @@ void GLDecal::DrawDecal(HWDrawInfo *di, FRenderState &state)
 	{
 		// Note: This should be replaced with proper shader based lighting.
 		double x, y;
-		float out[3];
+		float out[4];
 		decal->GetXY(decal->Side, x, y);
 		di->GetDynSpriteLight(nullptr, x, y, zcenter, decal->Side->lighthead, decal->Side->sector->PortalGroup, out);
-		state.SetDynLight(out[0], out[1], out[2]);
+		state.SetDynLight(out[0], out[1], out[2], out[3]);
 	}
 
 	// alpha color only has an effect when using an alpha texture.
@@ -121,7 +121,7 @@ void GLDecal::DrawDecal(HWDrawInfo *di, FRenderState &state)
 	state.SetTextureMode(TM_NORMAL);
 	state.SetObjectColor(0xffffffff);
 	state.SetFog(fc, -1);
-	state.SetDynLight(0, 0, 0);
+	state.SetDynLight(0, 0, 0, 1);
 }
 
 //==========================================================================

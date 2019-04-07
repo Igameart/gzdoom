@@ -360,7 +360,7 @@ public:
 		mSplitBottomPlane.Set((float)bn.X, (float)bn.Y, (float)bottom.negiC, (float)bottom.fD());
 	}
 
-	void SetDynLight(float r, float g, float b, float a = 1)
+	void SetDynLight(float r, float g, float b, float a)
 	{
 		mDynColor.Set(r, g, b, a);
 	}

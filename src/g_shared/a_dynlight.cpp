@@ -113,7 +113,7 @@ void AttachLight(AActor *self)
 	light->pSpotOuterAngle = &self->AngleVar(NAME_SpotOuterAngle);
 	light->pPitch = &self->Angles.Pitch;
 	light->pLightFlags = (LightFlags*)&self->IntVar(NAME_lightflags);
-	light->m_brightness = -1.0;
+	light->m_brightness = float(self->FloatVar(NAME_LightBrightness));
 	light->pArgs = self->args;
 	light->specialf1 = DAngle(double(self->SpawnAngle)).Normalized360().Degrees;
 	light->Sector = self->Sector;

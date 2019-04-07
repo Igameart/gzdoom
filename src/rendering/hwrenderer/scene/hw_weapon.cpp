@@ -80,7 +80,7 @@ void HWDrawInfo::DrawPSprite(HUDSprite *huds, FRenderState &state)
 	{
 		state.SetAddColor(0);
 	}
-	state.SetDynLight(huds->dynrgb[0], huds->dynrgb[1], huds->dynrgb[2]);
+	state.SetDynLight(huds->dynrgb[0], huds->dynrgb[1], huds->dynrgb[2], 1.f);
 	state.EnableBrightmap(!(huds->RenderStyle.Flags & STYLEF_ColorIsFixed));
 
 	if (huds->mframe)
@@ -103,7 +103,7 @@ void HWDrawInfo::DrawPSprite(HUDSprite *huds, FRenderState &state)
 	state.AlphaFunc(Alpha_GEqual, gl_mask_sprite_threshold);
 	state.SetObjectColor(0xffffffff);
 	state.SetAddColor(0);
-	state.SetDynLight(0, 0, 0);
+	state.SetDynLight(0, 0, 0, 1);
 	state.EnableBrightmap(false);
 }
 
