@@ -39,6 +39,7 @@ vec3 ProcessMaterialLight(Material material, vec3 color)
 {
 	vec4 dynlight = uDynLightColor;
 	vec3 normal = material.Normal;
+	float brightness = dynlight.a;
 
 	if (uLightIndex >= 0)
 	{
@@ -48,13 +49,13 @@ vec3 ProcessMaterialLight(Material material, vec3 color)
 			// modulated lights
 			for(int i=lightRange.x; i<lightRange.y; i+=4)
 			{
-				dynlight.rgb += lightContribution(i, normal);
+				dynlight.rgb += lightContribution(i, normal) * brightness;
 			}
 
 			// subtractive lights
 			for(int i=lightRange.y; i<lightRange.z; i+=4)
 			{
-				dynlight.rgb -= lightContribution(i, normal);
+				dynlight.rgb -= lightContribution(i, normal) * brightness;
 			}
 		}
 	}

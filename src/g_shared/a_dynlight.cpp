@@ -113,6 +113,7 @@ void AttachLight(AActor *self)
 	light->pSpotOuterAngle = &self->AngleVar(NAME_SpotOuterAngle);
 	light->pPitch = &self->Angles.Pitch;
 	light->pLightFlags = (LightFlags*)&self->IntVar(NAME_lightflags);
+	light->m_brightness = -1.0;
 	light->pArgs = self->args;
 	light->specialf1 = DAngle(double(self->SpawnAngle)).Normalized360().Degrees;
 	light->Sector = self->Sector;
@@ -388,6 +389,9 @@ void FDynamicLight::UpdateLocation()
 		// current settings. This avoids constant relinking of flickering lights
 
 		float intensity;
+		float brightness;
+
+		brightness = m_brightness;
 
 		if (lighttype == FlickerLight || lighttype == RandomFlickerLight || lighttype == PulseLight)
 		{

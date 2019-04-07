@@ -255,6 +255,7 @@ class FShader
 	FUniform4f muSplitBottomPlane;
 	FUniform4f muSplitTopPlane;
 	FBufferedUniform1f muInterpolationFactor;
+	//FBufferedUniform1f muDynLightBrightness;
 	FBufferedUniform1f muAlphaThreshold;
 	FBufferedUniform2f muSpecularMaterial;
 	FBufferedUniform1f muTimer;

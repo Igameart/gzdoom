@@ -91,6 +91,7 @@ protected:
 	ELightType m_type;
 	int8_t m_attenuate = -1;
 	LightFlags m_lightFlags = 0;
+	float m_brightness = -1.0;
 	bool m_swapped = false;
 	bool m_spot = false;
 	bool m_explicitPitch = false;
@@ -235,6 +236,7 @@ public:
 	FLightNode * touching_sector;
 	float radius;			// The maximum size the light can be with its current settings.
 	float m_currentRadius;	// The current light size.
+	float m_brightness;		// The brightness multiplier for the light.
 	int m_tickCount;
 	int m_lastUpdate;
 	int mShadowmapIndex;

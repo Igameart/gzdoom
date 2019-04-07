@@ -78,6 +78,10 @@ void FLightDefaults::ApplyProperties(FDynamicLight * light) const
 	light->specialf1 = m_Param;
 	light->pArgs = m_Args;
 	light->pLightFlags = &m_lightFlags;
+
+	light->m_brightness = (float)light->m_cycler.GetVal();
+	if (light->m_brightness < 0.0) light->m_brightness = 1.0;
+
 	if (m_lightFlags & LF_SPOT)
 	{
 		light->pSpotInnerAngle = &m_spotInnerAngle;

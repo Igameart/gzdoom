@@ -37,6 +37,7 @@ vec2 lightAttenuation(int i, vec3 normal, vec3 viewdir, float lightcolorA)
 vec3 ProcessMaterialLight(Material material, vec3 color)
 {
 	vec4 dynlight = uDynLightColor;
+	float brightness = dynlight.a;//uDynLightBrightness;
 	vec4 specular = vec4(0.0, 0.0, 0.0, 1.0);
 
 	vec3 normal = material.Normal;
@@ -52,8 +53,8 @@ vec3 ProcessMaterialLight(Material material, vec3 color)
 			{
 				vec4 lightcolor = lights[i+1];
 				vec2 attenuation = lightAttenuation(i, normal, viewdir, lightcolor.a);
-				dynlight.rgb += lightcolor.rgb * attenuation.x;
-				specular.rgb += lightcolor.rgb * attenuation.y;
+				dynlight.rgb += lightcolor.rgb * attenuation.x * brightness;
+				specular.rgb += lightcolor.rgb * attenuation.y * brightness;
 			}
 
 			// subtractive lights
@@ -67,8 +68,8 @@ vec3 ProcessMaterialLight(Material material, vec3 color)
 		}
 	}
 
-	dynlight.rgb = clamp(color + desaturate(dynlight).rgb, 0.0, 1.4);
-	specular.rgb = clamp(desaturate(specular).rgb, 0.0, 1.4);
+	dynlight.rgb = clamp(color + desaturate(dynlight).rgb, 0.0, 1.4 * brightness);
+	specular.rgb = clamp(desaturate(specular).rgb, 0.0, 1.4 * brightness);
 
 	vec3 frag = material.Base.rgb * dynlight.rgb + material.Specular * specular.rgb;
 
