@@ -350,6 +350,7 @@ void FDynamicLight::Tick()
 		break;
 	}
 	if (m_currentRadius <= 0) m_currentRadius = 1;
+	//m_currentRadius *= 3.0f;
 	UpdateLocation();
 }
 
@@ -679,7 +680,7 @@ void FDynamicLight::LinkLight()
 
 		dl_validcount++;
 		::validcount++;
-		CollectWithinRadius(Pos, sect, float(radius*radius));
+		CollectWithinRadius(Pos, sect, float(radius*radius) );
 
 	}
 		

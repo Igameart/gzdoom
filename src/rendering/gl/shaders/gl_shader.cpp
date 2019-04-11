@@ -260,6 +260,8 @@ bool FShader::Load(const char * name, const char * vert_prog_lump, const char * 
 
 	// Lighting + Fog
 	i_data += "uniform vec4 uLightAttr;\n";
+	i_data += "uniform bool uDynLightLinearAttenuation;\n";
+	i_data += "uniform float uDynLightAttenuationCoefficient;\n";
 	i_data += "#define uLightLevel uLightAttr.a\n";
 	i_data += "#define uFogDensity uLightAttr.b\n";
 	i_data += "#define uLightFactor uLightAttr.g\n";
@@ -522,6 +524,8 @@ bool FShader::Load(const char * name, const char * vert_prog_lump, const char * 
 	muLightIndex.Init(hShader, "uLightIndex");
 	muFogColor.Init(hShader, "uFogColor");
 	muDynLightColor.Init(hShader, "uDynLightColor");
+	muDynLightLinearAttenuation.Init(hShader, "uDynLightLinearAttenuation");
+	muDynLightAttenuationCoefficient.Init(hShader, "uDynLightAttenuationCoefficient");
 	muObjectColor.Init(hShader, "uObjectColor");
 	muObjectColor2.Init(hShader, "uObjectColor2");
 	muGlowBottomColor.Init(hShader, "uGlowBottomColor");

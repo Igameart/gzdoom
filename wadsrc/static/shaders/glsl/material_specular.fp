@@ -1,15 +1,43 @@
 
+float quadraticDistanceAttenuation(vec4 lightpos)
+{
+	float strength = (1.0 + lightpos.w * lightpos.w * 0.25 ) * 0.45;
+
+	vec3 distVec = lightpos.xyz - pixelpos.xyz;
+
+	float attenuation = strength / (1.0 + dot(distVec, distVec));
+	
+	float lightdistance = distance(lightpos.xyz, pixelpos.xyz);
+	
+	float attenSmoothClamp = pow(max( 0.0, 1.0 - lightdistance/lightpos.w ),uDynLightAttenuationCoefficient);
+
+	attenuation *= attenSmoothClamp;
+
+	return attenuation;
+}
+
+float linearDistanceAttenuation(vec4 lightpos)
+{
+	float lightdistance = distance(lightpos.xyz, pixelpos.xyz);
+	return clamp((lightpos.w - lightdistance) / lightpos.w, 0.0, 1.0);
+}
+
 vec2 lightAttenuation(int i, vec3 normal, vec3 viewdir, float lightcolorA)
 {
 	vec4 lightpos = lights[i];
 	vec4 lightspot1 = lights[i+2];
 	vec4 lightspot2 = lights[i+3];
-
-	float lightdistance = distance(lightpos.xyz, pixelpos.xyz);
-	if (lightpos.w < lightdistance)
-		return vec2(0.0); // Early out lights touching surface but not this fragment
 	
-	float attenuation = clamp((lightpos.w - lightdistance) / lightpos.w, 0.0, 1.0);
+	float attenuation;
+
+	if ( uDynLightLinearAttenuation == true ){
+		attenuation = linearDistanceAttenuation(lightpos);
+	}else{
+		attenuation = quadraticDistanceAttenuation(lightpos);
+	}
+
+	if (attenuation == 0.0)
+		return vec2(0.0); // Early out lights touching surface but not this fragment
 
 	if (lightspot1.w == 1.0)
 		attenuation *= spotLightAttenuation(lightpos, lightspot1.xyz, lightspot2.x, lightspot2.y);
@@ -17,7 +45,7 @@ vec2 lightAttenuation(int i, vec3 normal, vec3 viewdir, float lightcolorA)
 	vec3 lightdir = normalize(lightpos.xyz - pixelpos.xyz);
 
 	if (lightcolorA < 0.0) // Sign bit is the attenuated light flag
-		attenuation *= clamp(dot(normal, lightdir), 0.0, 1.0);
+		attenuation *= dot(normal, lightdir);//, 0.0, 1.0);
 
 	if (attenuation > 0.0) // Skip shadow map test if possible
 		attenuation *= shadowAttenuation(lightpos, lightcolorA);
@@ -67,8 +95,8 @@ vec3 ProcessMaterialLight(Material material, vec3 color)
 		}
 	}
 
-	dynlight.rgb = clamp(color + desaturate(dynlight).rgb, 0.0, 1.4);
-	specular.rgb = clamp(desaturate(specular).rgb, 0.0, 1.4);
+	dynlight.rgb = (color + desaturate(dynlight).rgb);//, 0.0, 1.4);
+	specular.rgb = (desaturate(specular).rgb);//, 0.0, 1.4);
 
 	vec3 frag = material.Base.rgb * dynlight.rgb + material.Specular * specular.rgb;
 

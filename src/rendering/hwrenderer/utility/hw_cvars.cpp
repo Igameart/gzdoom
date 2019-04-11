@@ -103,6 +103,9 @@ CVAR(Int, gl_billboard_mode, 0, CVAR_ARCHIVE | CVAR_GLOBALCONFIG)
 CVAR(Bool, gl_billboard_faces_camera, false, CVAR_ARCHIVE | CVAR_GLOBALCONFIG)
 CVAR(Bool, gl_billboard_particles, true, CVAR_ARCHIVE | CVAR_GLOBALCONFIG)
 CVAR(Int, gl_enhanced_nv_stealth, 3, CVAR_ARCHIVE | CVAR_GLOBALCONFIG)
+CVAR(Bool, gl_lightlinearattenuation, true, CVAR_ARCHIVE | CVAR_GLOBALCONFIG);
+CVAR(Float, gl_lightattenuationcoefficient, 2.5f, CVAR_ARCHIVE | CVAR_GLOBALCONFIG);
+
 CUSTOM_CVAR(Int, gl_fuzztype, 0, CVAR_ARCHIVE)
 {
 	if (self < 0 || self > 8) self = 0;

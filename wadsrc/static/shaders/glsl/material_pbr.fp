@@ -45,21 +45,27 @@ vec3 fresnelSchlickRoughness(float cosTheta, vec3 F0, float roughness)
 	return F0 + (max(vec3(1.0 - roughness), F0) - F0) * pow(1.0 - cosTheta, 5.0);
 }
 
-float quadraticDistanceAttenuation(vec4 lightpos)
-{
-	float strength = (1.0 + lightpos.w * lightpos.w * 0.25) * 0.5;
-
-	vec3 distVec = lightpos.xyz - pixelpos.xyz;
-	float attenuation = strength / (1.0 + dot(distVec, distVec));
-	if (attenuation <= 1.0 / 256.0) return 0.0;
-
-	return attenuation;
-}
-
 float linearDistanceAttenuation(vec4 lightpos)
 {
 	float lightdistance = distance(lightpos.xyz, pixelpos.xyz);
 	return clamp((lightpos.w - lightdistance) / lightpos.w, 0.0, 1.0);
+}
+
+float quadraticDistanceAttenuation(vec4 lightpos)
+{
+	float strength = (1.0 + lightpos.w * lightpos.w * 0.25 ) * 0.5;
+
+	vec3 distVec = lightpos.xyz - pixelpos.xyz;
+
+	float attenuation = strength / (1.0 + dot(distVec, distVec));
+	
+	float lightdistance = distance(lightpos.xyz, pixelpos.xyz);
+	
+	float attenSmoothClamp = pow(max( 0.0, 1.0 - lightdistance/lightpos.w),uDynLightAttenuationCoefficient);
+
+	attenuation *= attenSmoothClamp;
+
+	return attenuation;
 }
 
 vec3 ProcessMaterialLight(Material material, vec3 ambientLight)
@@ -98,7 +104,14 @@ vec3 ProcessMaterialLight(Material material, vec3 ambientLight)
 				vec3 L = normalize(lightpos.xyz - worldpos);
 				vec3 H = normalize(V + L);
 
-				float attenuation = linearDistanceAttenuation(lightpos);
+				float attenuation;
+
+				if ( uDynLightLinearAttenuation == true ){
+					attenuation = linearDistanceAttenuation(lightpos);
+				}else{
+					attenuation = quadraticDistanceAttenuation(lightpos);
+				}
+
 				if (lightspot1.w == 1.0)
 					attenuation *= spotLightAttenuation(lightpos, lightspot1.xyz, lightspot2.x, lightspot2.y);
 				if (lightcolor.a < 0.0)
@@ -107,7 +120,7 @@ vec3 ProcessMaterialLight(Material material, vec3 ambientLight)
 				if (attenuation > 0.0)
 				{
 					attenuation *= shadowAttenuation(lightpos, lightcolor.a);
-
+					
 					vec3 radiance = lightcolor.rgb * attenuation;
 
 					// cook-torrance brdf
@@ -120,9 +133,9 @@ vec3 ProcessMaterialLight(Material material, vec3 ambientLight)
 
 					vec3 nominator = NDF * G * F;
 					float denominator = 4.0 * clamp(dot(N, V), 0.0, 1.0) * clamp(dot(N, L), 0.0, 1.0);
-					vec3 specular = nominator / max(denominator, 0.001);
-
-					Lo += (kD * albedo / PI + specular) * radiance;
+					vec3 specular = ( nominator / max(denominator, 0.001) );
+					
+					Lo += (( kD * albedo / PI ) + specular ) * radiance;
 				}
 			}
 			//
@@ -139,6 +152,7 @@ vec3 ProcessMaterialLight(Material material, vec3 ambientLight)
 				vec3 H = normalize(V + L);
 
 				float attenuation = linearDistanceAttenuation(lightpos);
+
 				if (lightspot1.w == 1.0)
 					attenuation *= spotLightAttenuation(lightpos, lightspot1.xyz, lightspot2.x, lightspot2.y);
 				if (lightcolor.a < 0.0)

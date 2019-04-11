@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\gzdoom custom\Solution\CMakeFiles\50f6594cdd8a7a7e8cb7c0c82e9b8af1\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6E36386B-C692-3C2D-BC43-B6C0FD3667BC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

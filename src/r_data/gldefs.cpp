@@ -430,9 +430,9 @@ class GLDefsParser
 					break;
 				case LIGHTTAG_COLOR:
 					ParseTriple(sc, floatTriple);
-					defaults->SetArg(LIGHT_RED, clamp<int>((int)(floatTriple[0] * 255), 0, 255));
-					defaults->SetArg(LIGHT_GREEN, clamp<int>((int)(floatTriple[1] * 255), 0, 255));
-					defaults->SetArg(LIGHT_BLUE, clamp<int>((int)(floatTriple[2] * 255), 0, 255));
+					defaults->SetArg(LIGHT_RED, clamp<int>((int)(floatTriple[0] * 255), 0, 6553500));
+					defaults->SetArg(LIGHT_GREEN, clamp<int>((int)(floatTriple[1] * 255), 0, 6553500));
+					defaults->SetArg(LIGHT_BLUE, clamp<int>((int)(floatTriple[2] * 255), 0, 63353));
 					break;
 				case LIGHTTAG_OFFSET:
 					ParseTriple(sc, floatTriple);
@@ -521,9 +521,9 @@ class GLDefsParser
 					break;
 				case LIGHTTAG_COLOR:
 					ParseTriple(sc, floatTriple);
-					defaults->SetArg(LIGHT_RED, clamp<int>((int)(floatTriple[0] * 255), 0, 255));
-					defaults->SetArg(LIGHT_GREEN, clamp<int>((int)(floatTriple[1] * 255), 0, 255));
-					defaults->SetArg(LIGHT_BLUE, clamp<int>((int)(floatTriple[2] * 255), 0, 255));
+					defaults->SetArg(LIGHT_RED, clamp<int>((int)(floatTriple[0] * 255), 0, 6553500));
+					defaults->SetArg(LIGHT_GREEN, clamp<int>((int)(floatTriple[1] * 255), 0, 6553500));
+					defaults->SetArg(LIGHT_BLUE, clamp<int>((int)(floatTriple[2] * 255), 0, 6553500));
 					break;
 				case LIGHTTAG_OFFSET:
 					ParseTriple(sc, floatTriple);
@@ -620,9 +620,9 @@ class GLDefsParser
 					break;
 				case LIGHTTAG_COLOR:
 					ParseTriple(sc, floatTriple);
-					defaults->SetArg(LIGHT_RED, clamp<int>((int)(floatTriple[0] * 255), 0, 255));
-					defaults->SetArg(LIGHT_GREEN, clamp<int>((int)(floatTriple[1] * 255), 0, 255));
-					defaults->SetArg(LIGHT_BLUE, clamp<int>((int)(floatTriple[2] * 255), 0, 255));
+					defaults->SetArg(LIGHT_RED, clamp<int>((int)(floatTriple[0] * 255), 0, 6553500));
+					defaults->SetArg(LIGHT_GREEN, clamp<int>((int)(floatTriple[1] * 255), 0, 6553500));
+					defaults->SetArg(LIGHT_BLUE, clamp<int>((int)(floatTriple[2] * 255), 0, 6553500));
 					break;
 				case LIGHTTAG_OFFSET:
 					ParseTriple(sc, floatTriple);
@@ -718,9 +718,9 @@ class GLDefsParser
 					break;
 				case LIGHTTAG_COLOR:
 					ParseTriple(sc, floatTriple);
-					defaults->SetArg(LIGHT_RED, clamp<int>((int)(floatTriple[0] * 255), 0, 255));
-					defaults->SetArg(LIGHT_GREEN, clamp<int>((int)(floatTriple[1] * 255), 0, 255));
-					defaults->SetArg(LIGHT_BLUE, clamp<int>((int)(floatTriple[2] * 255), 0, 255));
+					defaults->SetArg(LIGHT_RED, clamp<int>((int)(floatTriple[0] * 255), 0, 6553500));
+					defaults->SetArg(LIGHT_GREEN, clamp<int>((int)(floatTriple[1] * 255), 0, 6553500));
+					defaults->SetArg(LIGHT_BLUE, clamp<int>((int)(floatTriple[2] * 255), 0, 6553500));
 					break;
 				case LIGHTTAG_OFFSET:
 					ParseTriple(sc, floatTriple);
@@ -821,9 +821,9 @@ class GLDefsParser
 					break;
 				case LIGHTTAG_COLOR:
 					ParseTriple(sc, floatTriple);
-					defaults->SetArg(LIGHT_RED, clamp<int>((int)(floatTriple[0] * 255), 0, 255));
-					defaults->SetArg(LIGHT_GREEN, clamp<int>((int)(floatTriple[1] * 255), 0, 255));
-					defaults->SetArg(LIGHT_BLUE, clamp<int>((int)(floatTriple[2] * 255), 0, 255));
+					defaults->SetArg(LIGHT_RED, clamp<int>((int)(floatTriple[0] * 255), 0, 6553500));
+					defaults->SetArg(LIGHT_GREEN, clamp<int>((int)(floatTriple[1] * 255), 0, 6553500));
+					defaults->SetArg(LIGHT_BLUE, clamp<int>((int)(floatTriple[2] * 255), 0, 6553500));
 					break;
 				case LIGHTTAG_OFFSET:
 					ParseTriple(sc, floatTriple);

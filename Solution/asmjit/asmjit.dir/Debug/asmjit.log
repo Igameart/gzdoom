@@ -1,0 +1,37 @@
+﻿  Building Custom Rule D:/gzdoom custom/asmjit/CMakeLists.txt
+  CMake does not need to re-run because D:/gzdoom custom/Solution/asmjit/CMakeFiles/generate.stamp is up-to-date.
+  arch.cpp
+  assembler.cpp
+  codebuilder.cpp
+  codecompiler.cpp
+  codeemitter.cpp
+  codeholder.cpp
+  constpool.cpp
+  cpuinfo.cpp
+  func.cpp
+  globals.cpp
+  inst.cpp
+  logging.cpp
+  operand.cpp
+  osutils.cpp
+  regalloc.cpp
+  runtime.cpp
+  string.cpp
+  utils.cpp
+  vmem.cpp
+  zone.cpp
+  Generating Code...
+  Compiling...
+  x86assembler.cpp
+  x86builder.cpp
+  x86compiler.cpp
+  x86inst.cpp
+  x86instimpl.cpp
+  x86internal.cpp
+  x86logging.cpp
+  x86operand.cpp
+  x86operand_regs.cpp
+  x86regalloc.cpp
+  Generating Code...
+x86operand.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+  asmjit.vcxproj -> D:\gzdoom custom\Solution\asmjit\Debug\asmjitd.lib

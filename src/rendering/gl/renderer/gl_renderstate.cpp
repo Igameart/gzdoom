@@ -132,6 +132,8 @@ bool FGLRenderState::ApplyShader()
 	activeShader->muFogColor.Set(mFogColor);
 	activeShader->muObjectColor.Set(mObjectColor);
 	activeShader->muDynLightColor.Set(mDynColor.vec);
+	activeShader->muDynLightLinearAttenuation.Set(gl_lightlinearattenuation);
+	activeShader->muDynLightAttenuationCoefficient.Set(gl_lightattenuationcoefficient);
 	activeShader->muInterpolationFactor.Set(mInterpolationFactor);
 	activeShader->muTimer.Set((double)(screen->FrameTime - firstFrame) * (double)mShaderTimer / 1000.);
 	activeShader->muAlphaThreshold.Set(mAlphaThreshold);

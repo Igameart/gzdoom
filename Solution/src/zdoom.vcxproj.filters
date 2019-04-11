@@ -1,0 +1,3479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\gzdoom custom\src\__autostart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\mididevices\music_win_mididevice.cpp">
+      <Filter>Audio Files\MIDI Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\win32\hardware.cpp">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\win32\helperthread.cpp">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\win32\i_cd.cpp">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\win32\i_crash.cpp">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\win32\i_input.cpp">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\win32\i_keyboard.cpp">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\win32\i_mouse.cpp">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\win32\i_dijoy.cpp">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\win32\i_rawps2.cpp">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\win32\i_xinput.cpp">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\win32\i_main.cpp">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\win32\i_system.cpp">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\win32\i_specialpaths.cpp">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\win32\st_start.cpp">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\win32\gl_sysfb.cpp">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\win32\base_sysfb.cpp">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\win32\win32basevideo.cpp">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\win32\win32glvideo.cpp">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\hires\hqnx_asm\hq2x_asm.cpp">
+      <Filter>Game Data\Textures\Hires\HQ Resize MMX version</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\hires\hqnx_asm\hq3x_asm.cpp">
+      <Filter>Game Data\Textures\Hires\HQ Resize MMX version</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\hires\hqnx_asm\hq4x_asm.cpp">
+      <Filter>Game Data\Textures\Hires\HQ Resize MMX version</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\hires\hqnx_asm\hqnx_asm_Image.cpp">
+      <Filter>Game Data\Textures\Hires\HQ Resize MMX version</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\swrenderer\r_all.cpp">
+      <Filter>Rendering\Software Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\swrenderer\r_swscene.cpp">
+      <Filter>Rendering\Software Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\polyrenderer\poly_all.cpp">
+      <Filter>Rendering\Poly Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\oplsynth\opl_mus_player.cpp">
+      <Filter>Audio Files\OPL Synth</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\mpg123_decoder.cpp">
+      <Filter>Audio Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\music_midi_base.cpp">
+      <Filter>Audio Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\oalsound.cpp">
+      <Filter>Audio Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\sndfile_decoder.cpp">
+      <Filter>Audio Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\fft4g.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\reverb.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\hires\hqnx\init.cpp">
+      <Filter>Game Data\Textures\Hires\HQ Resize</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\hires\hqnx\hq2x.cpp">
+      <Filter>Game Data\Textures\Hires\HQ Resize</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\hires\hqnx\hq3x.cpp">
+      <Filter>Game Data\Textures\Hires\HQ Resize</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\hires\hqnx\hq4x.cpp">
+      <Filter>Game Data\Textures\Hires\HQ Resize</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\hires\xbr\xbrz.cpp">
+      <Filter>Game Data\Textures\Hires\XBRZ</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\hires\xbr\xbrz_old.cpp">
+      <Filter>Game Data\Textures\Hires\XBRZ</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\gl_load\gl_load.c">
+      <Filter>Rendering\OpenGL Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\postprocessing\hw_postprocess_cvars.cpp">
+      <Filter>Rendering\Hardware Renderer\Postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\postprocessing\hw_postprocessshader.cpp">
+      <Filter>Rendering\Hardware Renderer\Postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\dynlights\hw_dynlightdata.cpp">
+      <Filter>Rendering\Hardware Renderer\Dynamic Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_bsp.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_fakeflat.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_decal.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_drawinfo.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_drawlist.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_clipper.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_flats.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_portal.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_renderhacks.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_sky.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_skyportal.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_sprites.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_spritelight.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_walls.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_walls_vertex.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_weapon.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\models\models.cpp">
+      <Filter>Render Data\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\matrix.cpp">
+      <Filter>Render Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\adlmidi\adldata.cpp">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\adlmidi\adlmidi.cpp">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\adlmidi\adlmidi_load.cpp">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\adlmidi\adlmidi_midiplay.cpp">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\adlmidi\adlmidi_opl3.cpp">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\adlmidi\adlmidi_private.cpp">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\adlmidi\chips\dosbox\dbopl.cpp">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\adlmidi\chips\dosbox_opl3.cpp">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\adlmidi\chips\nuked\nukedopl3_174.c">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\adlmidi\chips\nuked\nukedopl3.c">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\adlmidi\chips\nuked_opl3.cpp">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\adlmidi\chips\nuked_opl3_v174.cpp">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\adlmidi\wopl\wopl_file.c">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\opnmidi\chips\gens_opn2.cpp">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\opnmidi\chips\gens\Ym2612_Emu.cpp">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\opnmidi\chips\mame\mame_ym2612fm.c">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\opnmidi\chips\mame_opn2.cpp">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\opnmidi\chips\nuked_opn2.cpp">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\opnmidi\chips\nuked\ym3438.c">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\opnmidi\opnmidi.cpp">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\opnmidi\opnmidi_load.cpp">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\opnmidi\opnmidi_midiplay.cpp">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\opnmidi\opnmidi_opn2.cpp">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\opnmidi\opnmidi_private.cpp">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\opnmidi\wopn\wopn_file.c">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\am_map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\b_bot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\b_func.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\b_game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\b_move.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\b_think.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\bbannouncer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\c_bind.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\c_cmds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\c_console.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\c_consolebuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\c_cvars.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\c_dispatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\c_expr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\c_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\ct_chat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\d_iwad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\d_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\d_anonstats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\d_net.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\d_netinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\d_protocol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\dobject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\dobjgc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\dobjtype.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\doomstat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_cvars.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_dumpinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_hub.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gameconfigfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gitinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\hu_scores.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\i_net.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\m_cheat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\m_joy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\m_misc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_acs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_actionfunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_conversation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_destructible.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_effect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_enemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_interaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_lnspec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_maputl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_mobj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_openmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_pspr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_saveg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_setup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_spec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_states.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_things.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_tick.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\p_user.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_utility.cpp">
+      <Filter>Render Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_sky.cpp">
+      <Filter>Render Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_videoscale.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\s_advsound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\s_environment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\s_sndseq.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\s_sound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\serializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scriptutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\st_stuff.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\v_framebuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\v_palette.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\v_video.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\wi_stuff.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\a_keys.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\a_weapons.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\decallib.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\g_mapinfo.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\g_skill.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\gi.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\stringtable.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\umapinfo.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\w_wad.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\d_dehacked.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\g_doomedmap.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\info.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\keysections.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\p_terrain.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\statistics.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\teaminfo.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_pickups.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_action.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_decals.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_decalfx.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_doors.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_dynlight.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_flashfader.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_lightning.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_morph.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_quake.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_specialspot.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_ceiling.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_floor.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_lights.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_lighttransfer.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_pillar.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_plats.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_pusher.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\a_scroll.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\dsectoreffect.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\p_secnodes.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\p_sectors.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\p_sight.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\p_switch.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\p_tags.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\p_teleport.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\actorptrselect.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\dthinker.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\p_3dfloors.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\p_3dmidtex.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\p_linkedsectors.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\p_trace.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\po_man.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_shared\portal.cpp">
+      <Filter>Shared Game</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_statusbar\hudmessages.cpp">
+      <Filter>Statusbar</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_statusbar\shared_hud.cpp">
+      <Filter>Statusbar</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_statusbar\sbarinfo.cpp">
+      <Filter>Statusbar</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_statusbar\sbar_mugshot.cpp">
+      <Filter>Statusbar</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\g_statusbar\shared_sbar.cpp">
+      <Filter>Statusbar</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\2d\f_wipe.cpp">
+      <Filter>Rendering\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\2d\v_2ddrawer.cpp">
+      <Filter>Rendering\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\2d\v_drawtext.cpp">
+      <Filter>Rendering\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\2d\v_blend.cpp">
+      <Filter>Rendering\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\2d\v_draw.cpp">
+      <Filter>Rendering\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\gl\renderer\gl_renderer.cpp">
+      <Filter>Rendering\OpenGL Renderer\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\gl\renderer\gl_renderstate.cpp">
+      <Filter>Rendering\OpenGL Renderer\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\gl\renderer\gl_renderbuffers.cpp">
+      <Filter>Rendering\OpenGL Renderer\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\gl\renderer\gl_postprocess.cpp">
+      <Filter>Rendering\OpenGL Renderer\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\gl\renderer\gl_postprocessstate.cpp">
+      <Filter>Rendering\OpenGL Renderer\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\gl\renderer\gl_stereo3d.cpp">
+      <Filter>Rendering\OpenGL Renderer\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\gl\renderer\gl_scene.cpp">
+      <Filter>Rendering\OpenGL Renderer\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\gl\shaders\gl_shader.cpp">
+      <Filter>Rendering\OpenGL Renderer\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\gl\shaders\gl_shaderprogram.cpp">
+      <Filter>Rendering\OpenGL Renderer\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\gl\shaders\gl_postprocessshader.cpp">
+      <Filter>Rendering\OpenGL Renderer\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\gl_load\gl_interface.cpp">
+      <Filter>Rendering\OpenGL Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\gl\system\gl_framebuffer.cpp">
+      <Filter>Rendering\OpenGL Renderer\System</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\gl\system\gl_debug.cpp">
+      <Filter>Rendering\OpenGL Renderer\System</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\gl\system\gl_buffers.cpp">
+      <Filter>Rendering\OpenGL Renderer\System</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\gl\textures\gl_hwtexture.cpp">
+      <Filter>Rendering\OpenGL Renderer\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\gl\textures\gl_samplers.cpp">
+      <Filter>Rendering\OpenGL Renderer\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\data\hw_vertexbuilder.cpp">
+      <Filter>Rendering\Hardware Renderer\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\data\flatvertices.cpp">
+      <Filter>Rendering\Hardware Renderer\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\data\hw_viewpointbuffer.cpp">
+      <Filter>Rendering\Hardware Renderer\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\dynlights\hw_aabbtree.cpp">
+      <Filter>Rendering\Hardware Renderer\Dynamic Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\dynlights\hw_shadowmap.cpp">
+      <Filter>Rendering\Hardware Renderer\Dynamic Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\dynlights\hw_lightbuffer.cpp">
+      <Filter>Rendering\Hardware Renderer\Dynamic Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\models\hw_models.cpp">
+      <Filter>Rendering\Hardware Renderer\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_skydome.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_drawlistadd.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_renderstate.cpp">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\postprocessing\hw_postprocess.cpp">
+      <Filter>Rendering\Hardware Renderer\Postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\postprocessing\hw_shadowmapshader.cpp">
+      <Filter>Rendering\Hardware Renderer\Postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\postprocessing\hw_presentshader.cpp">
+      <Filter>Rendering\Hardware Renderer\Postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\postprocessing\hw_present3dRowshader.cpp">
+      <Filter>Rendering\Hardware Renderer\Postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\textures\hw_material.cpp">
+      <Filter>Rendering\Hardware Renderer\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\textures\hw_precache.cpp">
+      <Filter>Rendering\Hardware Renderer\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\utility\hw_clock.cpp">
+      <Filter>Rendering\Hardware Renderer\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\utility\hw_cvars.cpp">
+      <Filter>Rendering\Hardware Renderer\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\utility\hw_draw2d.cpp">
+      <Filter>Rendering\Hardware Renderer\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\utility\hw_lighting.cpp">
+      <Filter>Rendering\Hardware Renderer\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\utility\hw_shaderpatcher.cpp">
+      <Filter>Rendering\Hardware Renderer\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\hwrenderer\utility\hw_vrmodes.cpp">
+      <Filter>Rendering\Hardware Renderer\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\maploader\edata.cpp">
+      <Filter>Map Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\maploader\specials.cpp">
+      <Filter>Map Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\maploader\maploader.cpp">
+      <Filter>Map Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\maploader\slopes.cpp">
+      <Filter>Map Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\maploader\glnodes.cpp">
+      <Filter>Map Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\maploader\udmf.cpp">
+      <Filter>Map Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\maploader\usdf.cpp">
+      <Filter>Map Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\maploader\strifedialogue.cpp">
+      <Filter>Map Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\maploader\polyobjects.cpp">
+      <Filter>Map Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\maploader\renderinfo.cpp">
+      <Filter>Map Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\maploader\compatibility.cpp">
+      <Filter>Map Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\menu\joystickmenu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\menu\loadsavemenu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\menu\menu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\menu\menudef.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\menu\messagebox.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\menu\optionmenu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\menu\playermenu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\menu\resolutionmenu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\resourcefiles\ancientzip.cpp">
+      <Filter>Game Data\Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\resourcefiles\file_7z.cpp">
+      <Filter>Game Data\Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\resourcefiles\file_grp.cpp">
+      <Filter>Game Data\Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\resourcefiles\file_lump.cpp">
+      <Filter>Game Data\Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\resourcefiles\file_rff.cpp">
+      <Filter>Game Data\Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\resourcefiles\file_wad.cpp">
+      <Filter>Game Data\Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\resourcefiles\file_zip.cpp">
+      <Filter>Game Data\Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\resourcefiles\file_pak.cpp">
+      <Filter>Game Data\Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\resourcefiles\file_directory.cpp">
+      <Filter>Game Data\Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\resourcefiles\resourcefile.cpp">
+      <Filter>Game Data\Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\animations.cpp">
+      <Filter>Game Data\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\anim_switches.cpp">
+      <Filter>Game Data\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\bitmap.cpp">
+      <Filter>Game Data\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\texture.cpp">
+      <Filter>Game Data\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\image.cpp">
+      <Filter>Game Data\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\imagetexture.cpp">
+      <Filter>Game Data\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\texturemanager.cpp">
+      <Filter>Game Data\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\multipatchtexturebuilder.cpp">
+      <Filter>Game Data\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\skyboxtexture.cpp">
+      <Filter>Game Data\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\formats\automaptexture.cpp">
+      <Filter>Game Data\Textures\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\formats\brightmaptexture.cpp">
+      <Filter>Game Data\Textures\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\formats\buildtexture.cpp">
+      <Filter>Game Data\Textures\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\formats\canvastexture.cpp">
+      <Filter>Game Data\Textures\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\formats\ddstexture.cpp">
+      <Filter>Game Data\Textures\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\formats\flattexture.cpp">
+      <Filter>Game Data\Textures\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\formats\fontchars.cpp">
+      <Filter>Game Data\Textures\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\formats\imgztexture.cpp">
+      <Filter>Game Data\Textures\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\formats\jpegtexture.cpp">
+      <Filter>Game Data\Textures\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\formats\md5check.cpp">
+      <Filter>Game Data\Textures\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\formats\multipatchtexture.cpp">
+      <Filter>Game Data\Textures\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\formats\patchtexture.cpp">
+      <Filter>Game Data\Textures\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\formats\pcxtexture.cpp">
+      <Filter>Game Data\Textures\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\formats\pngtexture.cpp">
+      <Filter>Game Data\Textures\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\formats\rawpagetexture.cpp">
+      <Filter>Game Data\Textures\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\formats\emptytexture.cpp">
+      <Filter>Game Data\Textures\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\formats\shadertexture.cpp">
+      <Filter>Game Data\Textures\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\formats\tgatexture.cpp">
+      <Filter>Game Data\Textures\Formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\hires\hqresize.cpp">
+      <Filter>Game Data\Textures\Hires</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\textures\hires\hirestex.cpp">
+      <Filter>Game Data\Textures\Hires</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\fonts\singlelumpfont.cpp">
+      <Filter>Game Data\Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\fonts\singlepicfont.cpp">
+      <Filter>Game Data\Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\fonts\specialfont.cpp">
+      <Filter>Game Data\Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\fonts\font.cpp">
+      <Filter>Game Data\Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\fonts\hexfont.cpp">
+      <Filter>Game Data\Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\fonts\v_font.cpp">
+      <Filter>Game Data\Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\fonts\v_text.cpp">
+      <Filter>Game Data\Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\p_xlat.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\xlat\parse_xlat.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\gamedata\xlat\parsecontext.cpp">
+      <Filter>Game Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\fragglescript\t_func.cpp">
+      <Filter>FraggleScript</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\fragglescript\t_load.cpp">
+      <Filter>FraggleScript</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\fragglescript\t_oper.cpp">
+      <Filter>FraggleScript</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\fragglescript\t_parse.cpp">
+      <Filter>FraggleScript</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\fragglescript\t_prepro.cpp">
+      <Filter>FraggleScript</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\fragglescript\t_script.cpp">
+      <Filter>FraggleScript</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\fragglescript\t_spec.cpp">
+      <Filter>FraggleScript</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\fragglescript\t_variable.cpp">
+      <Filter>FraggleScript</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\fragglescript\t_cmd.cpp">
+      <Filter>FraggleScript</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\intermission\intermission.cpp">
+      <Filter>Intermission</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\intermission\intermission_parse.cpp">
+      <Filter>Intermission</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\colormaps.cpp">
+      <Filter>Render Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\cycler.cpp">
+      <Filter>Render Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\gldefs.cpp">
+      <Filter>Render Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\a_dynlightdata.cpp">
+      <Filter>Render Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\r_translate.cpp">
+      <Filter>Render Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\sprites.cpp">
+      <Filter>Render Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\portalgroups.cpp">
+      <Filter>Render Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\voxels.cpp">
+      <Filter>Render Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\renderstyle.cpp">
+      <Filter>Render Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\r_canvastexture.cpp">
+      <Filter>Render Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\r_interpolate.cpp">
+      <Filter>Render Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\r_vanillatrans.cpp">
+      <Filter>Render Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\r_sections.cpp">
+      <Filter>Render Data</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\models\models_md3.cpp">
+      <Filter>Render Data\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\models\models_md2.cpp">
+      <Filter>Render Data\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\models\models_voxel.cpp">
+      <Filter>Render Data\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\models\models_ue1.cpp">
+      <Filter>Render Data\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\r_data\models\models_obj.cpp">
+      <Filter>Render Data\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\symbols.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\vmiterators.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\vmthunks.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\vmthunks_actors.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\types.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\thingdef.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\thingdef_data.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\thingdef_properties.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\backend\codegen.cpp">
+      <Filter>Scripting\Compiler backend</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\backend\scopebarrier.cpp">
+      <Filter>Scripting\Compiler backend</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\backend\dynarrays.cpp">
+      <Filter>Scripting\Compiler backend</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\backend\vmbuilder.cpp">
+      <Filter>Scripting\Compiler backend</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\backend\vmdisasm.cpp">
+      <Filter>Scripting\Compiler backend</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\decorate\olddecorations.cpp">
+      <Filter>Scripting\Decorate frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\decorate\thingdef_exp.cpp">
+      <Filter>Scripting\Decorate frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\decorate\thingdef_parse.cpp">
+      <Filter>Scripting\Decorate frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\decorate\thingdef_states.cpp">
+      <Filter>Scripting\Decorate frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\vm\vmexec.cpp">
+      <Filter>Scripting\VM</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\vm\vmframe.cpp">
+      <Filter>Scripting\VM</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\zscript\ast.cpp">
+      <Filter>Scripting\ZScript frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\zscript\zcc_compile.cpp">
+      <Filter>Scripting\ZScript frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\zscript\zcc_parser.cpp">
+      <Filter>Scripting\ZScript frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\sfmt\SFMT.cpp">
+      <Filter>Utility\SFMT</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\i_music.cpp">
+      <Filter>Audio Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\i_sound.cpp">
+      <Filter>Audio Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\i_soundfont.cpp">
+      <Filter>Audio Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\mididevices\music_adlmidi_mididevice.cpp">
+      <Filter>Audio Files\MIDI Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\mididevices\music_opldumper_mididevice.cpp">
+      <Filter>Audio Files\MIDI Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\mididevices\music_opl_mididevice.cpp">
+      <Filter>Audio Files\MIDI Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\mididevices\music_opnmidi_mididevice.cpp">
+      <Filter>Audio Files\MIDI Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\mididevices\music_timiditypp_mididevice.cpp">
+      <Filter>Audio Files\MIDI Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\mididevices\music_fluidsynth_mididevice.cpp">
+      <Filter>Audio Files\MIDI Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\mididevices\music_softsynth_mididevice.cpp">
+      <Filter>Audio Files\MIDI Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\mididevices\music_timidity_mididevice.cpp">
+      <Filter>Audio Files\MIDI Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\mididevices\music_wildmidi_mididevice.cpp">
+      <Filter>Audio Files\MIDI Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\mididevices\music_wavewriter_mididevice.cpp">
+      <Filter>Audio Files\MIDI Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\midisources\midisource.cpp">
+      <Filter>Audio Files\MIDI Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\midisources\midisource_mus.cpp">
+      <Filter>Audio Files\MIDI Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\midisources\midisource_smf.cpp">
+      <Filter>Audio Files\MIDI Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\midisources\midisource_hmi.cpp">
+      <Filter>Audio Files\MIDI Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\midisources\midisource_xmi.cpp">
+      <Filter>Audio Files\MIDI Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\musicformats\music_cd.cpp">
+      <Filter>Audio Files\Music formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\musicformats\music_dumb.cpp">
+      <Filter>Audio Files\Music formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\musicformats\music_gme.cpp">
+      <Filter>Audio Files\Music formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\musicformats\music_libsndfile.cpp">
+      <Filter>Audio Files\Music formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\musicformats\music_midistream.cpp">
+      <Filter>Audio Files\Music formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\musicformats\music_opl.cpp">
+      <Filter>Audio Files\Music formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\musicformats\music_stream.cpp">
+      <Filter>Audio Files\Music formats</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\oplsynth\fmopl.cpp">
+      <Filter>Audio Files\OPL Synth</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\oplsynth\musicblock.cpp">
+      <Filter>Audio Files\OPL Synth</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\oplsynth\oplio.cpp">
+      <Filter>Audio Files\OPL Synth</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\oplsynth\dosbox\opl.cpp">
+      <Filter>Audio Files\OPL Synth\DOSBox</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\oplsynth\OPL3.cpp">
+      <Filter>Audio Files\OPL Synth</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\oplsynth\nukedopl3.cpp">
+      <Filter>Audio Files\OPL Synth</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timidity\common.cpp">
+      <Filter>Audio Files\Timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timidity\instrum.cpp">
+      <Filter>Audio Files\Timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timidity\instrum_dls.cpp">
+      <Filter>Audio Files\Timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timidity\instrum_font.cpp">
+      <Filter>Audio Files\Timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timidity\instrum_sf2.cpp">
+      <Filter>Audio Files\Timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timidity\mix.cpp">
+      <Filter>Audio Files\Timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timidity\playmidi.cpp">
+      <Filter>Audio Files\Timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timidity\resample.cpp">
+      <Filter>Audio Files\Timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timidity\timidity.cpp">
+      <Filter>Audio Files\Timidity</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\common.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\configfile.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\effect.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\filter.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\freq.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\instrum.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\mblock.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\mix.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\playmidi.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\quantity.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\readmidic.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\recache.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\resample.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\sbkconv.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\sffile.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\sfitem.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\smplfile.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\sndfont.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\timiditypp\tables.cpp">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\wildmidi\file_io.cpp">
+      <Filter>Audio Files\WildMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\wildmidi\gus_pat.cpp">
+      <Filter>Audio Files\WildMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\wildmidi\reverb.cpp">
+      <Filter>Audio Files\WildMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\wildmidi\wildmidi_lib.cpp">
+      <Filter>Audio Files\WildMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\sound\wildmidi\wm_error.cpp">
+      <Filter>Audio Files\WildMidi</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\swrenderer\textures\r_swtexture.cpp">
+      <Filter>Rendering\Software Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\swrenderer\textures\warptexture.cpp">
+      <Filter>Rendering\Software Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\rendering\swrenderer\textures\swcanvastexture.cpp">
+      <Filter>Rendering\Software Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\events.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\files.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\files_decompress.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\m_png.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\m_random.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\memarena.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\md5.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\nodebuilder\nodebuild.cpp">
+      <Filter>Utility\Node Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\nodebuilder\nodebuild_classify_nosse2.cpp">
+      <Filter>Utility\Node Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\nodebuilder\nodebuild_events.cpp">
+      <Filter>Utility\Node Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\nodebuilder\nodebuild_extract.cpp">
+      <Filter>Utility\Node Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\nodebuilder\nodebuild_gl.cpp">
+      <Filter>Utility\Node Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\nodebuilder\nodebuild_utility.cpp">
+      <Filter>Utility\Node Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\sc_man.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\stats.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\cmdlib.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\colormatcher.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\configfile.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\i_module.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\i_time.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\m_alloc.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\m_argv.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\m_bbox.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\name.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\s_playlist.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\v_collection.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\utf8.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\zstrformat.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\vm\jit.cpp">
+      <Filter>Scripting\VM</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\vm\jit_runtime.cpp">
+      <Filter>Scripting\VM</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\vm\jit_call.cpp">
+      <Filter>Scripting\VM</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\vm\jit_flow.cpp">
+      <Filter>Scripting\VM</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\vm\jit_load.cpp">
+      <Filter>Scripting\VM</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\vm\jit_math.cpp">
+      <Filter>Scripting\VM</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\vm\jit_move.cpp">
+      <Filter>Scripting\VM</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\scripting\vm\jit_store.cpp">
+      <Filter>Scripting\VM</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\Solution\src\g_pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\x86.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\strnatcmp.c">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\zstring.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\math\asin.c">
+      <Filter>Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\math\atan.c">
+      <Filter>Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\math\const.c">
+      <Filter>Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\math\cosh.c">
+      <Filter>Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\math\exp.c">
+      <Filter>Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\math\isnan.c">
+      <Filter>Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\math\log.c">
+      <Filter>Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\math\log10.c">
+      <Filter>Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\math\mtherr.c">
+      <Filter>Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\math\polevl.c">
+      <Filter>Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\math\pow.c">
+      <Filter>Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\math\powi.c">
+      <Filter>Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\math\sin.c">
+      <Filter>Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\math\sinh.c">
+      <Filter>Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\math\sqrt.c">
+      <Filter>Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\math\tan.c">
+      <Filter>Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\math\tanh.c">
+      <Filter>Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\utility\math\fastsin.cpp">
+      <Filter>Utility\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gzdoom custom\src\zzautozend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\gzdoom custom\src\actionspecials.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\actor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\actorinlines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\am_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\announcer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\autosegs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\b_bot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\basictypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\c_bind.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\c_console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\c_consolebuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\c_cvars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\c_dispatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\c_functions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\d_event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\d_gui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\d_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\d_net.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\d_netinf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\d_player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\d_protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\dobject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\dobjgc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\dobjtype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\doomdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\doomdef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\doomstat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\doomtype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\events.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\fragglescript\t_fs.h">
+      <Filter>FraggleScript</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\fragglescript\t_script.h">
+      <Filter>FraggleScript</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_cvars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_hub.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_levellocals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_pch2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\a_ceiling.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\a_decalfx.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\a_doors.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\a_dynlight.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\a_floor.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\a_lightning.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\a_lights.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\a_lighttransfer.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\a_morph.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\a_pickups.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\a_pillar.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\a_plats.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\a_pusher.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\a_scroll.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\a_sharedglobal.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\a_specialspot.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\actorptrselect.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\dsectoreffect.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\dthinker.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\p_3dfloors.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\p_3dmidtex.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\p_checkposition.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\p_tags.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\p_trace.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\po_man.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\portal.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_shared\statnums.h">
+      <Filter>Shared Game</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_statusbar\sbar.h">
+      <Filter>Statusbar</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_statusbar\sbarinfo.h">
+      <Filter>Statusbar</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gameconfigfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\a_keys.h">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\a_weapons.h">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\d_dehacked.h">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\decallib.h">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\fonts\fontinternals.h">
+      <Filter>Game Data\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\fonts\v_font.h">
+      <Filter>Game Data\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\fonts\v_text.h">
+      <Filter>Game Data\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\g_mapinfo.h">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\gi.h">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\gstrings.h">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\info.h">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\p_terrain.h">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\resourcefiles\ancientzip.h">
+      <Filter>Game Data\Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\resourcefiles\file_zip.h">
+      <Filter>Game Data\Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\resourcefiles\resourcefile.h">
+      <Filter>Game Data\Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\stringtable.h">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\teaminfo.h">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\textures\bitmap.h">
+      <Filter>Game Data\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\textures\hires\hqnx\common.h">
+      <Filter>Game Data\Textures\Hires\HQ Resize</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\textures\hires\hqnx\hqx.h">
+      <Filter>Game Data\Textures\Hires\HQ Resize</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\textures\hires\hqnx_asm\hqnx_asm.h">
+      <Filter>Game Data\Textures\Hires\HQ Resize MMX version</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\textures\hires\hqnx_asm\hqnx_asm_Image.h">
+      <Filter>Game Data\Textures\Hires\HQ Resize MMX version</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\textures\hires\xbr\xbrz.h">
+      <Filter>Game Data\Textures\Hires\XBRZ</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\textures\hires\xbr\xbrz_config.h">
+      <Filter>Game Data\Textures\Hires\XBRZ</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\textures\hires\xbr\xbrz_config_old.h">
+      <Filter>Game Data\Textures\Hires\XBRZ</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\textures\hires\xbr\xbrz_old.h">
+      <Filter>Game Data\Textures\Hires\XBRZ</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\textures\hires\xbr\xbrz_tools.h">
+      <Filter>Game Data\Textures\Hires\XBRZ</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\textures\image.h">
+      <Filter>Game Data\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\textures\imagehelpers.h">
+      <Filter>Game Data\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\textures\skyboxtexture.h">
+      <Filter>Game Data\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\textures\textures.h">
+      <Filter>Game Data\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\w_wad.h">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\w_zip.h">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\xlat\parsecontext.h">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\xlat\xlat.h">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gametype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gitinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\hu_stuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\i_cd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\i_net.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\i_video.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\intermission\intermission.h">
+      <Filter>Intermission</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\m_cheat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\m_joy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\m_misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\maploader\maploader.h">
+      <Filter>Map Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\maploader\udmf.h">
+      <Filter>Map Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\menu\menu.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\p_acs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\p_blockmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\p_conversation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\p_destructible.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\p_effect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\p_enemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\p_linetracedata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\p_lnspec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\p_local.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\p_maputl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\p_pspr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\p_saveg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\p_setup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\p_spec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\p_spec_thinkers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\p_tick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\cocoa\gl_sysfb.h">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\cocoa\i_common.h">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\cocoa\st_console.h">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\dikeys.h">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\hardware.h">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\i_system.h">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\sdl\gl_sysfb.h">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_data\colormaps.h">
+      <Filter>Render Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_data\cycler.h">
+      <Filter>Render Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_data\matrix.h">
+      <Filter>Render Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_data\models\models.h">
+      <Filter>Render Data\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_data\models\models_obj.h">
+      <Filter>Render Data\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_data\models\models_ue1.h">
+      <Filter>Render Data\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_data\models\tab_anorms.h">
+      <Filter>Render Data\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_data\r_canvastexture.h">
+      <Filter>Render Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_data\r_interpolate.h">
+      <Filter>Render Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_data\r_sections.h">
+      <Filter>Render Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_data\r_translate.h">
+      <Filter>Render Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_data\r_vanillatrans.h">
+      <Filter>Render Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_data\renderstyle.h">
+      <Filter>Render Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_data\sprites.h">
+      <Filter>Render Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_data\voxels.h">
+      <Filter>Render Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_defs.h">
+      <Filter>Render Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_renderer.h">
+      <Filter>Render Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_sky.h">
+      <Filter>Render Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_state.h">
+      <Filter>Render Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_utility.h">
+      <Filter>Render Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\r_videoscale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\2d\f_wipe.h">
+      <Filter>Rendering\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\2d\v_2ddrawer.h">
+      <Filter>Rendering\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\gl\renderer\gl_postprocessstate.h">
+      <Filter>Rendering\OpenGL Renderer\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\gl\renderer\gl_renderbuffers.h">
+      <Filter>Rendering\OpenGL Renderer\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\gl\renderer\gl_renderer.h">
+      <Filter>Rendering\OpenGL Renderer\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\gl\renderer\gl_renderstate.h">
+      <Filter>Rendering\OpenGL Renderer\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\gl\shaders\gl_postprocessshaderinstance.h">
+      <Filter>Rendering\OpenGL Renderer\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\gl\shaders\gl_shader.h">
+      <Filter>Rendering\OpenGL Renderer\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\gl\shaders\gl_shaderprogram.h">
+      <Filter>Rendering\OpenGL Renderer\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\gl\system\gl_buffers.h">
+      <Filter>Rendering\OpenGL Renderer\System</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\gl\system\gl_debug.h">
+      <Filter>Rendering\OpenGL Renderer\System</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\gl\system\gl_framebuffer.h">
+      <Filter>Rendering\OpenGL Renderer\System</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\gl\textures\gl_hwtexture.h">
+      <Filter>Rendering\OpenGL Renderer\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\gl\textures\gl_samplers.h">
+      <Filter>Rendering\OpenGL Renderer\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\gl_load\gl_interface.h">
+      <Filter>Rendering\OpenGL Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\gl_load\gl_load.h">
+      <Filter>Rendering\OpenGL Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\gl_load\gl_system.h">
+      <Filter>Rendering\OpenGL Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\data\buffers.h">
+      <Filter>Rendering\Hardware Renderer\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\data\flatvertices.h">
+      <Filter>Rendering\Hardware Renderer\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\data\hw_vertexbuilder.h">
+      <Filter>Rendering\Hardware Renderer\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\data\hw_viewpointbuffer.h">
+      <Filter>Rendering\Hardware Renderer\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\data\renderqueue.h">
+      <Filter>Rendering\Hardware Renderer\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\data\shaderuniforms.h">
+      <Filter>Rendering\Hardware Renderer\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\dynlights\hw_aabbtree.h">
+      <Filter>Rendering\Hardware Renderer\Dynamic Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\dynlights\hw_dynlightdata.h">
+      <Filter>Rendering\Hardware Renderer\Dynamic Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\dynlights\hw_lightbuffer.h">
+      <Filter>Rendering\Hardware Renderer\Dynamic Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\dynlights\hw_shadowmap.h">
+      <Filter>Rendering\Hardware Renderer\Dynamic Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\models\hw_models.h">
+      <Filter>Rendering\Hardware Renderer\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\postprocessing\hw_postprocess.h">
+      <Filter>Rendering\Hardware Renderer\Postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\postprocessing\hw_postprocess_cvars.h">
+      <Filter>Rendering\Hardware Renderer\Postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\postprocessing\hw_postprocessshader.h">
+      <Filter>Rendering\Hardware Renderer\Postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\postprocessing\hw_present3dRowshader.h">
+      <Filter>Rendering\Hardware Renderer\Postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\postprocessing\hw_presentshader.h">
+      <Filter>Rendering\Hardware Renderer\Postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\postprocessing\hw_shaderprogram.h">
+      <Filter>Rendering\Hardware Renderer\Postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\postprocessing\hw_shadowmapshader.h">
+      <Filter>Rendering\Hardware Renderer\Postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_clipper.h">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_drawinfo.h">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_drawlist.h">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_drawstructs.h">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_fakeflat.h">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_portal.h">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_renderstate.h">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_skydome.h">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_viewpointuniforms.h">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\scene\hw_weapon.h">
+      <Filter>Rendering\Hardware Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\textures\hw_ihwtexture.h">
+      <Filter>Rendering\Hardware Renderer\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\textures\hw_material.h">
+      <Filter>Rendering\Hardware Renderer\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\textures\hw_texcontainer.h">
+      <Filter>Rendering\Hardware Renderer\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\utility\hw_clock.h">
+      <Filter>Rendering\Hardware Renderer\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\utility\hw_cvars.h">
+      <Filter>Rendering\Hardware Renderer\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\utility\hw_lighting.h">
+      <Filter>Rendering\Hardware Renderer\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\utility\hw_shaderpatcher.h">
+      <Filter>Rendering\Hardware Renderer\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\hwrenderer\utility\hw_vrmodes.h">
+      <Filter>Rendering\Hardware Renderer\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\drawers\poly_buffer.h">
+      <Filter>Rendering\Poly Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\drawers\poly_draw_args.h">
+      <Filter>Rendering\Poly Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\drawers\poly_triangle.h">
+      <Filter>Rendering\Poly Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\drawers\screen_triangle.h">
+      <Filter>Rendering\Poly Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\math\gpu_types.h">
+      <Filter>Rendering\Poly Renderer\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\poly_renderer.h">
+      <Filter>Rendering\Poly Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\poly_renderthread.h">
+      <Filter>Rendering\Poly Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_cull.h">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_decal.h">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_light.h">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_model.h">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_particle.h">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_plane.h">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_playersprite.h">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_portal.h">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_scene.h">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_sky.h">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_sprite.h">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_wall.h">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_wallsprite.h">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\drawers\r_draw.h">
+      <Filter>Rendering\Software Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\drawers\r_draw_pal.h">
+      <Filter>Rendering\Software Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\drawers\r_draw_rgba.h">
+      <Filter>Rendering\Software Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\drawers\r_draw_sky32.h">
+      <Filter>Rendering\Software Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\drawers\r_draw_sky32_sse2.h">
+      <Filter>Rendering\Software Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\drawers\r_draw_span32.h">
+      <Filter>Rendering\Software Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\drawers\r_draw_span32_sse2.h">
+      <Filter>Rendering\Software Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\drawers\r_draw_sprite32.h">
+      <Filter>Rendering\Software Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\drawers\r_draw_sprite32_sse2.h">
+      <Filter>Rendering\Software Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\drawers\r_draw_wall32.h">
+      <Filter>Rendering\Software Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\drawers\r_draw_wall32_sse2.h">
+      <Filter>Rendering\Software Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\drawers\r_thread.h">
+      <Filter>Rendering\Software Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\line\r_farclip_line.h">
+      <Filter>Rendering\Software Renderer\Line</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\line\r_fogboundary.h">
+      <Filter>Rendering\Software Renderer\Line</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\line\r_line.h">
+      <Filter>Rendering\Software Renderer\Line</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\line\r_renderdrawsegment.h">
+      <Filter>Rendering\Software Renderer\Line</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\line\r_walldraw.h">
+      <Filter>Rendering\Software Renderer\Line</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\line\r_wallsetup.h">
+      <Filter>Rendering\Software Renderer\Line</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\plane\r_flatplane.h">
+      <Filter>Rendering\Software Renderer\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\plane\r_planerenderer.h">
+      <Filter>Rendering\Software Renderer\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\plane\r_skyplane.h">
+      <Filter>Rendering\Software Renderer\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\plane\r_slopeplane.h">
+      <Filter>Rendering\Software Renderer\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\plane\r_visibleplane.h">
+      <Filter>Rendering\Software Renderer\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\plane\r_visibleplanelist.h">
+      <Filter>Rendering\Software Renderer\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\r_memory.h">
+      <Filter>Rendering\Software Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\r_renderthread.h">
+      <Filter>Rendering\Software Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\r_swcolormaps.h">
+      <Filter>Rendering\Software Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\r_swrenderer.h">
+      <Filter>Rendering\Software Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\r_swscene.h">
+      <Filter>Rendering\Software Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\scene\r_3dfloors.h">
+      <Filter>Rendering\Software Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\scene\r_light.h">
+      <Filter>Rendering\Software Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\scene\r_opaque_pass.h">
+      <Filter>Rendering\Software Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\scene\r_portal.h">
+      <Filter>Rendering\Software Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\scene\r_scene.h">
+      <Filter>Rendering\Software Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\scene\r_translucent_pass.h">
+      <Filter>Rendering\Software Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\segments\r_clipsegment.h">
+      <Filter>Rendering\Software Renderer\Segments</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\segments\r_drawsegment.h">
+      <Filter>Rendering\Software Renderer\Segments</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\segments\r_portalsegment.h">
+      <Filter>Rendering\Software Renderer\Segments</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\textures\r_swtexture.h">
+      <Filter>Rendering\Software Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\textures\warpbuffer.h">
+      <Filter>Rendering\Software Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\things\r_decal.h">
+      <Filter>Rendering\Software Renderer\Things</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\things\r_model.h">
+      <Filter>Rendering\Software Renderer\Things</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\things\r_particle.h">
+      <Filter>Rendering\Software Renderer\Things</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\things\r_playersprite.h">
+      <Filter>Rendering\Software Renderer\Things</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\things\r_sprite.h">
+      <Filter>Rendering\Software Renderer\Things</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\things\r_visiblesprite.h">
+      <Filter>Rendering\Software Renderer\Things</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\things\r_visiblespritelist.h">
+      <Filter>Rendering\Software Renderer\Things</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\things\r_voxel.h">
+      <Filter>Rendering\Software Renderer\Things</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\things\r_wallsprite.h">
+      <Filter>Rendering\Software Renderer\Things</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\viewport\r_drawerargs.h">
+      <Filter>Rendering\Software Renderer\Viewport</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\viewport\r_skydrawer.h">
+      <Filter>Rendering\Software Renderer\Viewport</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\viewport\r_spandrawer.h">
+      <Filter>Rendering\Software Renderer\Viewport</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\viewport\r_spritedrawer.h">
+      <Filter>Rendering\Software Renderer\Viewport</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\viewport\r_viewport.h">
+      <Filter>Rendering\Software Renderer\Viewport</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\viewport\r_walldrawer.h">
+      <Filter>Rendering\Software Renderer\Viewport</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\s_sndseq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\s_sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\scripting\backend\codegen.h">
+      <Filter>Scripting\Compiler backend</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\scripting\backend\scopebarrier.h">
+      <Filter>Scripting\Compiler backend</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\scripting\backend\vmbuilder.h">
+      <Filter>Scripting\Compiler backend</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\scripting\symbols.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\scripting\thingdef.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\scripting\types.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\scripting\vm\jit.h">
+      <Filter>Scripting\VM</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\scripting\vm\jitintern.h">
+      <Filter>Scripting\VM</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\scripting\vm\vm.h">
+      <Filter>Scripting\VM</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\scripting\vm\vmexec.h">
+      <Filter>Scripting\VM</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\scripting\vm\vmintern.h">
+      <Filter>Scripting\VM</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\scripting\vm\vmops.h">
+      <Filter>Scripting\VM</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\scripting\zscript\zcc_compile.h">
+      <Filter>Scripting\ZScript frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\scripting\zscript\zcc_exprlist.h">
+      <Filter>Scripting\ZScript frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\scripting\zscript\zcc_parser.h">
+      <Filter>Scripting\ZScript frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\scriptutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\serializer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\adlmidi\adldata.hh">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\adlmidi\adlmidi.h">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\adlmidi\adlmidi.hpp">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\adlmidi\adlmidi_bankmap.h">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\adlmidi\adlmidi_cvt.hpp">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\adlmidi\adlmidi_private.hpp">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\adlmidi\adlmidi_ptr.hpp">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\adlmidi\file_reader.hpp">
+      <Filter>Audio Files\ADL MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\efx.h">
+      <Filter>Audio Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\i_midi_win32.h">
+      <Filter>Audio Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\i_music.h">
+      <Filter>Audio Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\i_musicinterns.h">
+      <Filter>Audio Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\i_sound.h">
+      <Filter>Audio Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\i_soundfont.h">
+      <Filter>Audio Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\i_soundinternal.h">
+      <Filter>Audio Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\midisources\midisource.h">
+      <Filter>Audio Files\MIDI Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\mpg123_decoder.h">
+      <Filter>Audio Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\mpgload.h">
+      <Filter>Audio Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\mus2midi.h">
+      <Filter>Audio Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\oalload.h">
+      <Filter>Audio Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\oalsound.h">
+      <Filter>Audio Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\oplsynth\dosbox\opl.h">
+      <Filter>Audio Files\OPL Synth\DOSBox</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\oplsynth\genmidi.h">
+      <Filter>Audio Files\OPL Synth</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\oplsynth\musicblock.h">
+      <Filter>Audio Files\OPL Synth</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\oplsynth\nukedopl3.h">
+      <Filter>Audio Files\OPL Synth</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\oplsynth\opl.h">
+      <Filter>Audio Files\OPL Synth</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\oplsynth\opl_mus_player.h">
+      <Filter>Audio Files\OPL Synth</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\oplsynth\oplio.h">
+      <Filter>Audio Files\OPL Synth</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\opnmidi\file_reader.hpp">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\opnmidi\opnbank.h">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\opnmidi\opnmidi.h">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\opnmidi\opnmidi_bankmap.h">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\opnmidi\opnmidi_cvt.hpp">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\opnmidi\opnmidi_private.hpp">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\opnmidi\opnmidi_ptr.hpp">
+      <Filter>Audio Files\OPN MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\sndfile_decoder.h">
+      <Filter>Audio Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\sndload.h">
+      <Filter>Audio Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\thirdparty\al.h">
+      <Filter>Audio Files\Third-party</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\thirdparty\alc.h">
+      <Filter>Audio Files\Third-party</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\thirdparty\alext.h">
+      <Filter>Audio Files\Third-party</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\thirdparty\mpg123.h">
+      <Filter>Audio Files\Third-party</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\thirdparty\sndfile.h">
+      <Filter>Audio Files\Third-party</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timidity\dls1.h">
+      <Filter>Audio Files\Timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timidity\dls2.h">
+      <Filter>Audio Files\Timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timidity\gf1patch.h">
+      <Filter>Audio Files\Timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timidity\sf2.h">
+      <Filter>Audio Files\Timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timidity\timidity.h">
+      <Filter>Audio Files\Timidity</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\common.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\controls.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\effect.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\fft4g.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\filter.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\freq.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\instrum.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\mblock.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\mix.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\optcode.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\playmidi.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\quantity.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\recache.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\resample.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\reverb.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\sffile.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\sfitem.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\sflayer.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\sysdep.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\tables.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\timiditypp\timidity.h">
+      <Filter>Audio Files\Timiditypp</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\wildmidi\common.h">
+      <Filter>Audio Files\WildMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\wildmidi\file_io.h">
+      <Filter>Audio Files\WildMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\wildmidi\gus_pat.h">
+      <Filter>Audio Files\WildMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\wildmidi\reverb.h">
+      <Filter>Audio Files\WildMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\wildmidi\wildmidi_lib.h">
+      <Filter>Audio Files\WildMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\sound\wildmidi\wm_error.h">
+      <Filter>Audio Files\WildMidi</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\st_start.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\st_stuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\cmdlib.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\colormatcher.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\configfile.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\ctpl.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\doomerrors.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\files.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\i_module.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\i_time.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\lists.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\m_alloc.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\m_argv.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\m_bbox.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\m_crc32.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\m_fixed.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\m_png.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\m_random.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\m_swap.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\math\cmath.h">
+      <Filter>Utility\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\math\mconf.h">
+      <Filter>Utility\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\md5.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\memarena.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\name.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\namedef.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\parallel_for.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\allocators.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\document.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\encodedstream.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\encodings.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\filereadstream.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\filewritestream.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\fwd.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\istreamwrapper.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\memorybuffer.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\memorystream.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\ostreamwrapper.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\pointer.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\prettywriter.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\rapidjson.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\reader.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\schema.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\stream.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\stringbuffer.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\rapidjson\writer.h">
+      <Filter>Utility\RapidJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\s_playlist.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\sc_man.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\sc_man_tokens.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\sfmt\SFMT-alti.h">
+      <Filter>Utility\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\sfmt\SFMT-params.h">
+      <Filter>Utility\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\sfmt\SFMT-params11213.h">
+      <Filter>Utility\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\sfmt\SFMT-params1279.h">
+      <Filter>Utility\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\sfmt\SFMT-params132049.h">
+      <Filter>Utility\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\sfmt\SFMT-params19937.h">
+      <Filter>Utility\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\sfmt\SFMT-params216091.h">
+      <Filter>Utility\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\sfmt\SFMT-params2281.h">
+      <Filter>Utility\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\sfmt\SFMT-params4253.h">
+      <Filter>Utility\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\sfmt\SFMT-params44497.h">
+      <Filter>Utility\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\sfmt\SFMT-params607.h">
+      <Filter>Utility\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\sfmt\SFMT-params86243.h">
+      <Filter>Utility\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\sfmt\SFMT-sse2.h">
+      <Filter>Utility\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\sfmt\SFMT.h">
+      <Filter>Utility\SFMT</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\stats.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\strnatcmp.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\tarray.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\templates.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\tflags.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\utf8.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\v_collection.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\vectors.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\weightedlist.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\x86.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\xs_Float.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\zstring.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\v_colortables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\v_palette.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\v_video.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\version.h">
+      <Filter>Versioning</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\wi_stuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\win32\afxres.h">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\win32\base_sysfb.h">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\win32\gl_sysfb.h">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\win32\hardware.h">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\win32\helperthread.h">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\win32\i_input.h">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\win32\i_system.h">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\win32\optwin32.h">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\win32\rawinput.h">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\win32\resource.h">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\win32\wglext.h">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\win32\win32basevideo.h">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\win32\win32glvideo.h">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\win32\winres.h">
+      <Filter>Platforms\Win32 Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\i_cd.cpp">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\i_steam.cpp">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\sdl\crashcatcher.c">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\sdl\hardware.cpp">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\sdl\i_gui.cpp">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\sdl\i_input.cpp">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\sdl\i_joystick.cpp">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\sdl\i_main.cpp">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\sdl\i_system.cpp">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\sdl\sdlglvideo.cpp">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\sdl\st_start.cpp">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\osx\iwadpicker_cocoa.mm">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\osx\i_specialpaths.mm">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\osx\zdoom.icns">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\cocoa\i_input.mm">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\cocoa\i_joystick.cpp">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\cocoa\i_main.mm">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\cocoa\i_main_except.cpp">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\cocoa\i_system.mm">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\cocoa\i_video.mm">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\cocoa\st_console.mm">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\cocoa\st_start.mm">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\unix\i_specialpaths.cpp">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\posix\unix\gtk_dialogs.cpp">
+      <Filter>Platforms\POSIX Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\r_swcolormaps.cpp">
+      <Filter>Rendering\Software Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\r_swrenderer.cpp">
+      <Filter>Rendering\Software Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\r_memory.cpp">
+      <Filter>Rendering\Software Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\r_renderthread.cpp">
+      <Filter>Rendering\Software Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\drawers\r_draw.cpp">
+      <Filter>Rendering\Software Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\drawers\r_draw_pal.cpp">
+      <Filter>Rendering\Software Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\drawers\r_draw_rgba.cpp">
+      <Filter>Rendering\Software Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\drawers\r_thread.cpp">
+      <Filter>Rendering\Software Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\scene\r_3dfloors.cpp">
+      <Filter>Rendering\Software Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\scene\r_light.cpp">
+      <Filter>Rendering\Software Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\scene\r_opaque_pass.cpp">
+      <Filter>Rendering\Software Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\scene\r_portal.cpp">
+      <Filter>Rendering\Software Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\scene\r_scene.cpp">
+      <Filter>Rendering\Software Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\scene\r_translucent_pass.cpp">
+      <Filter>Rendering\Software Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\viewport\r_drawerargs.cpp">
+      <Filter>Rendering\Software Renderer\Viewport</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\viewport\r_skydrawer.cpp">
+      <Filter>Rendering\Software Renderer\Viewport</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\viewport\r_spandrawer.cpp">
+      <Filter>Rendering\Software Renderer\Viewport</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\viewport\r_spritedrawer.cpp">
+      <Filter>Rendering\Software Renderer\Viewport</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\viewport\r_viewport.cpp">
+      <Filter>Rendering\Software Renderer\Viewport</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\viewport\r_walldrawer.cpp">
+      <Filter>Rendering\Software Renderer\Viewport</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\line\r_line.cpp">
+      <Filter>Rendering\Software Renderer\Line</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\line\r_farclip_line.cpp">
+      <Filter>Rendering\Software Renderer\Line</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\line\r_walldraw.cpp">
+      <Filter>Rendering\Software Renderer\Line</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\line\r_wallsetup.cpp">
+      <Filter>Rendering\Software Renderer\Line</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\line\r_fogboundary.cpp">
+      <Filter>Rendering\Software Renderer\Line</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\line\r_renderdrawsegment.cpp">
+      <Filter>Rendering\Software Renderer\Line</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\segments\r_clipsegment.cpp">
+      <Filter>Rendering\Software Renderer\Segments</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\segments\r_drawsegment.cpp">
+      <Filter>Rendering\Software Renderer\Segments</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\segments\r_portalsegment.cpp">
+      <Filter>Rendering\Software Renderer\Segments</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\things\r_visiblesprite.cpp">
+      <Filter>Rendering\Software Renderer\Things</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\things\r_visiblespritelist.cpp">
+      <Filter>Rendering\Software Renderer\Things</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\things\r_voxel.cpp">
+      <Filter>Rendering\Software Renderer\Things</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\things\r_particle.cpp">
+      <Filter>Rendering\Software Renderer\Things</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\things\r_playersprite.cpp">
+      <Filter>Rendering\Software Renderer\Things</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\things\r_sprite.cpp">
+      <Filter>Rendering\Software Renderer\Things</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\things\r_wallsprite.cpp">
+      <Filter>Rendering\Software Renderer\Things</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\things\r_decal.cpp">
+      <Filter>Rendering\Software Renderer\Things</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\things\r_model.cpp">
+      <Filter>Rendering\Software Renderer\Things</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\plane\r_visibleplane.cpp">
+      <Filter>Rendering\Software Renderer\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\plane\r_visibleplanelist.cpp">
+      <Filter>Rendering\Software Renderer\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\plane\r_skyplane.cpp">
+      <Filter>Rendering\Software Renderer\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\plane\r_planerenderer.cpp">
+      <Filter>Rendering\Software Renderer\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\plane\r_flatplane.cpp">
+      <Filter>Rendering\Software Renderer\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\swrenderer\plane\r_slopeplane.cpp">
+      <Filter>Rendering\Software Renderer\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\poly_renderer.cpp">
+      <Filter>Rendering\Poly Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\poly_renderthread.cpp">
+      <Filter>Rendering\Poly Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_scene.cpp">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_portal.cpp">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_cull.cpp">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_decal.cpp">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_particle.cpp">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_plane.cpp">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_playersprite.cpp">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_wall.cpp">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_wallsprite.cpp">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_sprite.cpp">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_model.cpp">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_sky.cpp">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\scene\poly_light.cpp">
+      <Filter>Rendering\Poly Renderer\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\drawers\poly_buffer.cpp">
+      <Filter>Rendering\Poly Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\drawers\poly_triangle.cpp">
+      <Filter>Rendering\Poly Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\drawers\poly_draw_args.cpp">
+      <Filter>Rendering\Poly Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\drawers\screen_triangle.cpp">
+      <Filter>Rendering\Poly Renderer\Drawers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\rendering\polyrenderer\math\gpu_types.cpp">
+      <Filter>Rendering\Poly Renderer\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\Solution\src\sc_man_scanner.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\utility\sc_man_scanner.re">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\g_statusbar\sbarinfo_commands.cpp">
+      <Filter>Statusbar</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\gamedata\xlat\xlat_parser.y">
+      <Filter>Game Data</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\Solution\src\xlat_parser.c">
+      <Filter>Xlat</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\Solution\src\xlat_parser.h">
+      <Filter>Xlat</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\src\scripting\zscript\zcc-parse.lemon">
+      <Filter>Scripting\ZScript frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\Solution\src\zcc-parse.c">
+      <Filter>Scripting\ZScript frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gzdoom custom\Solution\src\zcc-parse.h">
+      <Filter>Scripting\ZScript frontend</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gzdoom custom\Solution\CMakeFiles\ee2f25a5b979dd8a6b1f40428f32d34c\sc_man_scanner.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gzdoom custom\Solution\CMakeFiles\ee2f25a5b979dd8a6b1f40428f32d34c\xlat_parser.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gzdoom custom\Solution\CMakeFiles\ee2f25a5b979dd8a6b1f40428f32d34c\zcc-parse.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gzdoom custom\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\gzdoom custom\src\win32\zdoom.rc">
+      <Filter>Versioning</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Audio Files">
+      <UniqueIdentifier>{0AE04255-EF12-3149-8117-457E63F4FFBF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Files\ADL MIDI">
+      <UniqueIdentifier>{2511BF9C-D08E-3652-B731-73D143D5C6D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Files\MIDI Devices">
+      <UniqueIdentifier>{107B2806-E34C-3900-AF24-4BE96A52AC80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Files\MIDI Sources">
+      <UniqueIdentifier>{992149B2-1332-3786-87BF-56AC9B435654}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Files\Music formats">
+      <UniqueIdentifier>{FEC52463-E762-3654-9975-570943E16345}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Files\OPL Synth">
+      <UniqueIdentifier>{2FB278B4-B142-3AD5-A382-AE2775865ED7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Files\OPL Synth\DOSBox">
+      <UniqueIdentifier>{4E218DD3-03FE-369B-9380-C9B4B1197F62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Files\OPN MIDI">
+      <UniqueIdentifier>{07B1A6AB-AC5D-3087-986D-1BC4B60EE13F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Files\Third-party">
+      <UniqueIdentifier>{A30E8B54-2761-3B8E-997E-6B74156751E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Files\Timidity">
+      <UniqueIdentifier>{FA02C518-030F-3B37-92DF-DB9454E5E0D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Files\Timiditypp">
+      <UniqueIdentifier>{5E7D52F2-19B7-3E73-B70E-A180B1AEA6F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Files\WildMidi">
+      <UniqueIdentifier>{B23BA00B-4F35-3F06-8B03-A02B8977E864}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6E36386B-C692-3C2D-BC43-B6C0FD3667BC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FraggleScript">
+      <UniqueIdentifier>{7C6882A1-10C1-3930-AF3E-EA919DDC6852}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Data">
+      <UniqueIdentifier>{B21BF932-FDD6-3E51-8F07-CA973DAF7209}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Data\Fonts">
+      <UniqueIdentifier>{EDD9EF33-0A26-3281-9C5A-515FB3398365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Data\Resource Files">
+      <UniqueIdentifier>{C5F50169-FEA2-3AD9-B9AB-5DF8C8700049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Data\Textures">
+      <UniqueIdentifier>{DAAEC47F-9B0A-310F-97D0-F310A7FF8686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Data\Textures\Formats">
+      <UniqueIdentifier>{B99E8CB3-AE39-3993-B245-903C632A2E38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Data\Textures\Hires">
+      <UniqueIdentifier>{947C6544-D6B2-3510-B3C3-26A725A55A3B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Data\Textures\Hires\HQ Resize">
+      <UniqueIdentifier>{16D70ABF-323B-3CED-B5FC-A70A5D23CD39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Data\Textures\Hires\HQ Resize MMX version">
+      <UniqueIdentifier>{9578F123-6076-3F1F-AC28-D9DB4A4E357F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Data\Textures\Hires\XBRZ">
+      <UniqueIdentifier>{9FF31783-6198-3C56-9E97-0726C6F69F0D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B09F927B-5D9A-3FD1-BD83-3A6138283E28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Intermission">
+      <UniqueIdentifier>{8B5EBC75-A9A3-33E2-87CE-D2EE4FAB4F0C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map Loader">
+      <UniqueIdentifier>{5EEFA18C-C235-3051-B99C-13431A9ADD69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{CE422610-1BEF-3AAC-AF7B-AA13F15089B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms">
+      <UniqueIdentifier>{42EF574E-C29E-3905-AAEB-54C34C6B6949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms\POSIX Files">
+      <UniqueIdentifier>{7B0B0849-1CE4-38D3-9819-0E7813FE25FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms\Win32 Files">
+      <UniqueIdentifier>{E99AC83C-3E93-35CE-9E18-9817EC70272B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render Data">
+      <UniqueIdentifier>{D514FDD8-F245-3D67-99F6-32F69D59E970}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render Data\Models">
+      <UniqueIdentifier>{1D69A7C1-6DF2-3596-BFA1-3230E6B6E799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render Interface">
+      <UniqueIdentifier>{F79E2241-2050-367A-9568-FF9E4878F30B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering">
+      <UniqueIdentifier>{2ED55305-CD0B-3480-B2B2-822C0C8DEE7E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\2D">
+      <UniqueIdentifier>{298CCAD0-2CD7-3E12-834C-9D932800EC5D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Hardware Renderer">
+      <UniqueIdentifier>{62A8F20E-802D-31D1-BAF9-A6C93548C0B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Hardware Renderer\Data">
+      <UniqueIdentifier>{84A21EED-527A-3916-8FF3-3378DA55352D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Hardware Renderer\Dynamic Lights">
+      <UniqueIdentifier>{B85E0FAE-793F-3B9A-B475-64C6803816A7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Hardware Renderer\Models">
+      <UniqueIdentifier>{C26E44CA-AFC6-3696-93B9-F4624E738B1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Hardware Renderer\Postprocessing">
+      <UniqueIdentifier>{1EEDA63F-0CCA-383F-9AAB-D8EBD46FD68C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Hardware Renderer\Scene">
+      <UniqueIdentifier>{E95768A3-C63B-3DFC-AA21-6DBE9DC2F4BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Hardware Renderer\Textures">
+      <UniqueIdentifier>{A0E67ED5-EE97-3AA0-898C-2D70C24D84B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Hardware Renderer\Utilities">
+      <UniqueIdentifier>{42A349E1-8D05-3335-8E40-CB6F83A89993}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\OpenGL Loader">
+      <UniqueIdentifier>{4CD31BF5-934B-3C62-9230-E4D3BC92B277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\OpenGL Renderer">
+      <UniqueIdentifier>{2EB9E8D5-04AD-3898-80A3-2A6B558FB12B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\OpenGL Renderer\Renderer">
+      <UniqueIdentifier>{12931276-A644-3EFE-8203-04F12B275B16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\OpenGL Renderer\Shaders">
+      <UniqueIdentifier>{7016B0C9-C728-374A-9703-995533C17B03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\OpenGL Renderer\System">
+      <UniqueIdentifier>{3CA20510-4916-31C9-B3F0-71D8DFD6459B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\OpenGL Renderer\Textures">
+      <UniqueIdentifier>{EC6937EE-D5AC-3E5E-B2BE-5C24A120653D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Poly Renderer">
+      <UniqueIdentifier>{C66A9A0C-F5A7-3172-9FAA-AD0537A5CE90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Poly Renderer\Drawers">
+      <UniqueIdentifier>{EE8B46C1-6ED9-3DAC-84AF-8829EBDB8EAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Poly Renderer\Math">
+      <UniqueIdentifier>{258BD3CF-4F48-32B5-A088-E1A7120E9F7D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Poly Renderer\Scene">
+      <UniqueIdentifier>{FAB73E91-878A-3A0A-8CFF-F76F57C117AD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Software Renderer">
+      <UniqueIdentifier>{D7DE2CF2-4872-3003-A17E-41B5A0B1D06B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Software Renderer\Drawers">
+      <UniqueIdentifier>{83499030-AD14-3E37-87FE-F2CE785CA077}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Software Renderer\Line">
+      <UniqueIdentifier>{56B5A235-AB54-3792-AD4C-67A5D88F9505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Software Renderer\Plane">
+      <UniqueIdentifier>{02BA2625-A383-3D15-830F-363110C88019}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Software Renderer\Scene">
+      <UniqueIdentifier>{5EADE4E0-BDF7-39A1-8710-C04EBD3DF643}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Software Renderer\Segments">
+      <UniqueIdentifier>{82AD1A27-03F5-35A6-B7EF-488B1249F425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Software Renderer\Things">
+      <UniqueIdentifier>{BF6424FF-47CF-3796-AF1D-4908040106B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Software Renderer\Viewport">
+      <UniqueIdentifier>{6BD3EFA2-A0A9-3153-87DC-2CC79D834D6F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripting">
+      <UniqueIdentifier>{52658B98-9ADF-31EB-94BB-1F8599764FD8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripting\Compiler backend">
+      <UniqueIdentifier>{E744C275-7FB8-3187-ABBF-FB9E19FD5069}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripting\Decorate frontend">
+      <UniqueIdentifier>{96DCFBF8-30AC-3ED5-8B63-7D0F97B209CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripting\VM">
+      <UniqueIdentifier>{FE0F6ABB-F3C2-36DB-BA69-49637A2B985C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripting\ZScript frontend">
+      <UniqueIdentifier>{A0AEAD48-4CAC-3CE9-945B-6BF45DDEE583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared Game">
+      <UniqueIdentifier>{6C0A11BA-2DD0-3844-B23B-1281ED8BBA6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A2EB1DA6-09C8-3B21-A64B-9D3A0A9D8E49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Statusbar">
+      <UniqueIdentifier>{3282F9E8-7B70-37F5-A704-7126B3299111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{7D8F73AC-02EB-3EF3-8E6C-5D57868B64EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Math">
+      <UniqueIdentifier>{0FEB9CEA-E9A0-3447-B6D8-3467ED71ABFA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Node Builder">
+      <UniqueIdentifier>{F31A0539-6084-3857-8373-1A25798ABDF5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\RapidJSON">
+      <UniqueIdentifier>{AA3CF45D-7AC9-36BA-954F-00B3C3C90F05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\SFMT">
+      <UniqueIdentifier>{748160E1-A14C-3A86-BFA7-77B4E44DD345}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Versioning">
+      <UniqueIdentifier>{3DD234FA-0C86-3607-B593-8E0B4D95F29B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Xlat">
+      <UniqueIdentifier>{177F6126-0327-3791-8B8A-67D2273413BD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

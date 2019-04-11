@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A5390951-7378-36A1-AE3B-5E6A3D356D92}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>dumb</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gzdoom custom\Solution\dumb\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">dumb.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">dumb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gzdoom custom\Solution\dumb\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">dumb.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">dumb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gzdoom custom\Solution\dumb\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">dumb.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">dumb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gzdoom custom\Solution\dumb\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">dumb.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">dumb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\gzdoom custom\dumb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;UNICODE;_UNICODE;NDEBUG;_DEBUG;DEBUGMODE=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;UNICODE;_UNICODE;NDEBUG;DEBUGMODE=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gzdoom custom\dumb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gzdoom custom\dumb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\gzdoom custom\dumb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;UNICODE;_UNICODE;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;UNICODE;_UNICODE;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gzdoom custom\dumb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gzdoom custom\dumb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\gzdoom custom\dumb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;UNICODE;_UNICODE;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;UNICODE;_UNICODE;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gzdoom custom\dumb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gzdoom custom\dumb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\gzdoom custom\dumb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;UNICODE;_UNICODE;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;UNICODE;_UNICODE;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gzdoom custom\dumb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gzdoom custom\dumb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gzdoom custom\dumb\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/gzdoom custom/dumb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/gzdoom custom" "-BD:/gzdoom custom/Solution" --check-stamp-file "D:/gzdoom custom/Solution/dumb/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/gzdoom custom/dumb/CMakeLists.txt;D:\CMake\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;D:\CMake\share\cmake-3.14\Modules\CheckFunctionExists.c;D:\CMake\share\cmake-3.14\Modules\CheckFunctionExists.cmake;D:\gzdoom custom\dumb\CMakeLists.txt;D:\gzdoom custom\dumb\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gzdoom custom\Solution\dumb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/gzdoom custom/dumb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/gzdoom custom" "-BD:/gzdoom custom/Solution" --check-stamp-file "D:/gzdoom custom/Solution/dumb/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/gzdoom custom/dumb/CMakeLists.txt;D:\CMake\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;D:\CMake\share\cmake-3.14\Modules\CheckFunctionExists.c;D:\CMake\share\cmake-3.14\Modules\CheckFunctionExists.cmake;D:\gzdoom custom\dumb\CMakeLists.txt;D:\gzdoom custom\dumb\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gzdoom custom\Solution\dumb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/gzdoom custom/dumb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/gzdoom custom" "-BD:/gzdoom custom/Solution" --check-stamp-file "D:/gzdoom custom/Solution/dumb/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/gzdoom custom/dumb/CMakeLists.txt;D:\CMake\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;D:\CMake\share\cmake-3.14\Modules\CheckFunctionExists.c;D:\CMake\share\cmake-3.14\Modules\CheckFunctionExists.cmake;D:\gzdoom custom\dumb\CMakeLists.txt;D:\gzdoom custom\dumb\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gzdoom custom\Solution\dumb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/gzdoom custom/dumb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/gzdoom custom" "-BD:/gzdoom custom/Solution" --check-stamp-file "D:/gzdoom custom/Solution/dumb/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/gzdoom custom/dumb/CMakeLists.txt;D:\CMake\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;D:\CMake\share\cmake-3.14\Modules\CheckFunctionExists.c;D:\CMake\share\cmake-3.14\Modules\CheckFunctionExists.cmake;D:\gzdoom custom\dumb\CMakeLists.txt;D:\gzdoom custom\dumb\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gzdoom custom\Solution\dumb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\gzdoom custom\dumb\src\core\unload.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\core\rendsig.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\core\rendduh.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\core\register.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\core\readduh.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\core\rawsig.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\core\makeduh.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\core\loadduh.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\core\dumbfile.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\core\duhtag.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\core\duhlen.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\core\atexit.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\helpers\stdfile.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\helpers\silence.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\helpers\sampbuf.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\helpers\riff.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\helpers\resample.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\helpers\memfile.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\helpers\clickrem.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\helpers\barray.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\xmeffect.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readxm2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readxm.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readstm2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readstm.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\reads3m2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\reads3m.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readriff.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readptm.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readpsm.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readoldpsm.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readokt2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readokt.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readmtm.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readmod2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readmod.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readdsmf.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readasy.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readamf2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readamf.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readam.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\read6692.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\read669.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\ptmeffect.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadxm2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadxm.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadstm2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadstm.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loads3m2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loads3m.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadriff2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadriff.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadptm2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadptm.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadpsm2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadpsm.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadoldpsm2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadoldpsm.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadokt2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadokt.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadmtm2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadmtm.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadmod2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadmod.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadasy2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadasy.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadamf2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadamf.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\load6692.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\load669.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\itunload.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\itrender.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\itread2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\itread.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\itorder.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\itmisc.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\itload2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\itload.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readany.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadany2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\loadany.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\it\readany2.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\helpers\resampler.c" />
+    <ClCompile Include="D:\gzdoom custom\dumb\src\helpers\lpc.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\gzdoom custom\Solution\ZERO_CHECK.vcxproj">
+      <Project>{04ABC131-AD09-38DC-BFC9-4D2E60FEE331}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,928 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FFD3BB28-32F3-3D19-9A12-BED9F226E805}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>gzdoom_pk3</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gzdoom custom\Solution\CMakeFiles\ede76a521d329f5de427ff8c599dfc6d\gzdoom.pk3.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../gzdoom.pk3</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\tools\zipdir\Debug\zipdir.exe -udf "D:/gzdoom custom/Solution/gzdoom.pk3" "D:/gzdoom custom/wadsrc/static"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/gzdoom custom/Solution/gzdoom.pk3" "D:/gzdoom custom/Solution/Debug/gzdoom.pk3"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/gzdoom custom/Solution/CMakeFiles/ede76a521d329f5de427ff8c599dfc6d/gzdoom.pk3.rule;D:\gzdoom custom\Solution\tools\zipdir\Debug\zipdir.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gzdoom custom\Solution\gzdoom.pk3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../gzdoom.pk3</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\tools\zipdir\Release\zipdir.exe -udf "D:/gzdoom custom/Solution/gzdoom.pk3" "D:/gzdoom custom/wadsrc/static"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/gzdoom custom/Solution/gzdoom.pk3" "D:/gzdoom custom/Solution/Release/gzdoom.pk3"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/gzdoom custom/Solution/CMakeFiles/ede76a521d329f5de427ff8c599dfc6d/gzdoom.pk3.rule;D:\gzdoom custom\Solution\tools\zipdir\Release\zipdir.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gzdoom custom\Solution\gzdoom.pk3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ../gzdoom.pk3</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\tools\zipdir\MinSizeRel\zipdir.exe -udf "D:/gzdoom custom/Solution/gzdoom.pk3" "D:/gzdoom custom/wadsrc/static"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/gzdoom custom/Solution/gzdoom.pk3" "D:/gzdoom custom/Solution/MinSizeRel/gzdoom.pk3"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/gzdoom custom/Solution/CMakeFiles/ede76a521d329f5de427ff8c599dfc6d/gzdoom.pk3.rule;D:\gzdoom custom\Solution\tools\zipdir\MinSizeRel\zipdir.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gzdoom custom\Solution\gzdoom.pk3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../gzdoom.pk3</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\tools\zipdir\RelWithDebInfo\zipdir.exe -udf "D:/gzdoom custom/Solution/gzdoom.pk3" "D:/gzdoom custom/wadsrc/static"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/gzdoom custom/Solution/gzdoom.pk3" "D:/gzdoom custom/Solution/RelWithDebInfo/gzdoom.pk3"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/gzdoom custom/Solution/CMakeFiles/ede76a521d329f5de427ff8c599dfc6d/gzdoom.pk3.rule;D:\gzdoom custom\Solution\tools\zipdir\RelWithDebInfo\zipdir.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gzdoom custom\Solution\gzdoom.pk3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gzdoom custom\Solution\CMakeFiles\77ed73a61934450802c6554f339022e0\gzdoom_pk3.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe -E touch "D:/gzdoom custom/Solution/tools/zipdir/Debug/zipdir.exe"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/gzdoom custom/Solution/CMakeFiles/77ed73a61934450802c6554f339022e0/gzdoom_pk3.rule;D:\gzdoom custom\Solution\gzdoom.pk3;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gzdoom custom\Solution\wadsrc\CMakeFiles\gzdoom_pk3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe -E touch "D:/gzdoom custom/Solution/tools/zipdir/Release/zipdir.exe"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/gzdoom custom/Solution/CMakeFiles/77ed73a61934450802c6554f339022e0/gzdoom_pk3.rule;D:\gzdoom custom\Solution\gzdoom.pk3;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gzdoom custom\Solution\wadsrc\CMakeFiles\gzdoom_pk3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe -E touch "D:/gzdoom custom/Solution/tools/zipdir/MinSizeRel/zipdir.exe"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/gzdoom custom/Solution/CMakeFiles/77ed73a61934450802c6554f339022e0/gzdoom_pk3.rule;D:\gzdoom custom\Solution\gzdoom.pk3;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gzdoom custom\Solution\wadsrc\CMakeFiles\gzdoom_pk3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe -E touch "D:/gzdoom custom/Solution/tools/zipdir/RelWithDebInfo/zipdir.exe"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/gzdoom custom/Solution/CMakeFiles/77ed73a61934450802c6554f339022e0/gzdoom_pk3.rule;D:\gzdoom custom\Solution\gzdoom.pk3;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gzdoom custom\Solution\wadsrc\CMakeFiles\gzdoom_pk3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gzdoom custom\wadsrc\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/gzdoom custom/wadsrc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/gzdoom custom" "-BD:/gzdoom custom/Solution" --check-stamp-file "D:/gzdoom custom/Solution/wadsrc/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/gzdoom custom/wadsrc/CMakeLists.txt;D:\gzdoom custom\wadsrc\CMakeLists.txt;D:\gzdoom custom\wadsrc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gzdoom custom\Solution\wadsrc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/gzdoom custom/wadsrc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/gzdoom custom" "-BD:/gzdoom custom/Solution" --check-stamp-file "D:/gzdoom custom/Solution/wadsrc/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/gzdoom custom/wadsrc/CMakeLists.txt;D:\gzdoom custom\wadsrc\CMakeLists.txt;D:\gzdoom custom\wadsrc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gzdoom custom\Solution\wadsrc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/gzdoom custom/wadsrc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/gzdoom custom" "-BD:/gzdoom custom/Solution" --check-stamp-file "D:/gzdoom custom/Solution/wadsrc/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/gzdoom custom/wadsrc/CMakeLists.txt;D:\gzdoom custom\wadsrc\CMakeLists.txt;D:\gzdoom custom\wadsrc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gzdoom custom\Solution\wadsrc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/gzdoom custom/wadsrc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/gzdoom custom" "-BD:/gzdoom custom/Solution" --check-stamp-file "D:/gzdoom custom/Solution/wadsrc/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/gzdoom custom/wadsrc/CMakeLists.txt;D:\gzdoom custom\wadsrc\CMakeLists.txt;D:\gzdoom custom\wadsrc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gzdoom custom\Solution\wadsrc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\gzdoom custom\Solution\wadsrc\CMakeFiles\gzdoom_pk3" />
+    <None Include="D:\gzdoom custom\wadsrc\static\althudcf.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\animdefs.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\botsupp.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\compatibility.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\credits\b@ckdrop.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\credits\crashlog.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\credits\dbigfont.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\credits\dog sprite.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\credits\dsdgact.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\credits\dsdgatk.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\credits\dsdgdth.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\credits\dsdgpain.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\credits\dsdgsit.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\credits\icebrk1a.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\credits\icedth1.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\credits\maparrows.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\credits\newconsolefont.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\credits\railgf1.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\credits\rsmk.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\credits\sgrn.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\decaldef.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\defbinds.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\dehsupp.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\etc.h.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\doom.doom1\sprofs.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\doom.doom2\sprofs.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\doom.freedoom\decaldef.z" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\game-doomchex\animated.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\game-doomchex\sndinfo.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\game-doomstrifechex\bigfont.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\game-heretic\animated.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\game-heretic\defbinds.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\game-heretic\sndinfo.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\game-heretic\sndseq.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\game-hexen\defbinds.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\game-hexen\sndinfo.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\game-strife\acs\strfhelp.o" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\game-strife\animated.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\game-strife\defbinds.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\game-strife\loadacs.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\game-strife\sndinfo.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\heretic\sprofs.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\hexen\sprofs.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\strife\sprofs.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\strifeteaser1\mapinfo\conversationids.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\filter\strifeteaser2\mapinfo\conversationids.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\fontdefs.txt" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\fonts\consolefont\0000.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\fonts\consolefont\0100.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\fonts\consolefont\0400.png" />
+    <None Include="D:\gzdoom custom\wadsrc\static\fonts\consolefont\font.inf" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\glstuff\gllight.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\glstuff\glpart.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\glstuff\glpart2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\glstuff\mirror.png" />
+    <None Include="D:\gzdoom custom\wadsrc\static\graphics\-badpatc.lmp" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\artibox.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\b@ckdrop.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\bal7scr1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\bal7scr2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\bfglite1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\bfglite2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\bfgscrc1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\bfgscrc2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\blast1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\bsmear1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\bsmear2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\bsplat1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\bsplat2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\bsplat3.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\bsplat4.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\bsplat5.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\bsplat6.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\bsplat7.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\cbalscr1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\cbalscr2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\cbowmark.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\chexcurs.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\chip1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\chip2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\chip3.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\chip4.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\chip5.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\clerface.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\cursor.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\doomcurs.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\fiteface.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\hamoback.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\herecurs.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\hexncurs.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\invgeml1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\invgeml2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\invgemr1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\invgemr2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\m_back_d.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\m_back_h.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\m_back_s.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\m_back_x.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\mageface.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\plasma1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\plasma2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\readyico.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\scorch1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\selectbo.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\stfbany.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\stkeys6.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\stkeys7.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\stkeys8.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\stpbany.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\strfcurs.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\twirl.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\wislash.png" />
+    <None Include="D:\gzdoom custom\wadsrc\static\graphics\xhairb1.imgz" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\graphics\xhairb2.png" />
+    <None Include="D:\gzdoom custom\wadsrc\static\graphics\xhairb3.imgz" />
+    <None Include="D:\gzdoom custom\wadsrc\static\graphics\xhairb4.imgz" />
+    <None Include="D:\gzdoom custom\wadsrc\static\graphics\xhairb5.imgz" />
+    <None Include="D:\gzdoom custom\wadsrc\static\graphics\xhairb6.imgz" />
+    <None Include="D:\gzdoom custom\wadsrc\static\graphics\xhairb7.imgz" />
+    <None Include="D:\gzdoom custom\wadsrc\static\graphics\xhairs1.imgz" />
+    <None Include="D:\gzdoom custom\wadsrc\static\graphics\xhairs2.imgz" />
+    <None Include="D:\gzdoom custom\wadsrc\static\graphics\xhairs3.imgz" />
+    <None Include="D:\gzdoom custom\wadsrc\static\graphics\xhairs4.imgz" />
+    <None Include="D:\gzdoom custom\wadsrc\static\graphics\xhairs5.imgz" />
+    <None Include="D:\gzdoom custom\wadsrc\static\graphics\xhairs6.imgz" />
+    <None Include="D:\gzdoom custom\wadsrc\static\graphics\xhairs7.imgz" />
+    <None Include="D:\gzdoom custom\wadsrc\static\in_epi1.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\in_epi2.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\in_epi3.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\in_htc1.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\in_htc2.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\in_htc3.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\indexfont" />
+    <None Include="D:\gzdoom custom\wadsrc\static\iwadinfo.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\language.csv" />
+    <None Include="D:\gzdoom custom\wadsrc\static\language.def" />
+    <None Include="D:\gzdoom custom\wadsrc\static\lmacros.csv" />
+    <None Include="D:\gzdoom custom\wadsrc\static\lockdefs.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\maparrows\arrow.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\maparrows\dagger.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\maparrows\ddtarrow.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\maparrows\key.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\maparrows\ravenkey.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\chex.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\chex3.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\common.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\conversationids.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\doom1.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\doom2.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\doom2bfg.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\doomcommon.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\doomitems.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\eternity.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\hacx.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\harmony.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\heretic.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\hereticsw.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\hexdd.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\hexen.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\mindefaults.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\plutonia.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\strife.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\tnt.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\ultdoom.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\mapinfo\urbanbrawl.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\menudef.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\netnotch.dat" />
+    <None Include="D:\gzdoom custom\wadsrc\static\newconsolefont.hex" />
+    <None Include="D:\gzdoom custom\wadsrc\static\notch.dat" />
+    <None Include="D:\gzdoom custom\wadsrc\static\reverbs.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sbarinfo.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sbarinfo\doom.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sbarinfo\heretic.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sbarinfo\hexen.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\bloomcombine.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\bloomextract.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\blur.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\burn.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\colormap.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\depthblur.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\exposureaverage.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\exposurecombine.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\exposureextract.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\fogboundary.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\func_brightmap.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\func_defaultlight.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\func_defaultmat.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\func_normal.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\func_notexture.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\func_paletted.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\func_pbr.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\func_spec.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\func_warp1.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\func_warp2.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\func_warp3.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\func_wavex.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\fuzz_jagged.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\fuzz_noise.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\fuzz_smooth.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\fuzz_smoothnoise.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\fuzz_smoothtranslucent.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\fuzz_software.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\fuzz_standard.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\fuzz_swirly.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\fxaa.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\lensdistortion.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\lineardepth.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\main.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\main.vp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\material_nolight.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\material_normal.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\material_pbr.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\material_specular.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\present.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\present_checker3d.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\present_column3d.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\present_row3d.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\screenquad.vp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\screenquadscale.vp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\shadowmap.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\ssao.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\ssaocombine.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\stencil.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\shaders\glsl\tonemap.fp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sndinfo.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sndseq.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sounds\dsdgact.ogg" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sounds\dsdgatk.ogg" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sounds\dsdgdth.ogg" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sounds\dsdgpain.ogg" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sounds\dsdgsit.ogg" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sounds\dsempty.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sounds\dsquake.ogg" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sounds\dssecret.flac" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sounds\icebrk1a.ogg" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sounds\icedth1.ogg" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sounds\railgf1.ogg" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sounds\spark1.ogg" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sounds\spark2.ogg" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sounds\spark3.ogg" />
+    <None Include="D:\gzdoom custom\wadsrc\static\spaldoom.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc\static\spalhtic.lmp" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\AFLYA0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\AFLYB0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\AFLYC0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\AFLYD0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\SGRNA1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\SGRNA2A8.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\SGRNA3A7.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\SGRNA4A6.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\SGRNA5.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\amrka0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSA1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSA2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSA3.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSA4.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSA5.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSA6.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSA7.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSA8.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSB1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSB2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSB3.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSB4.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSB5.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSB6.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSB7.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSB8.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSC1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSC2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSC3.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSC4.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSC5.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSC6.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSC7.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSC8.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSD1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSD2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSD3.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSD4.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSD5.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSD6.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSD7.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSD8.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSE1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSE2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSE3.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSE4.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSE5.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSE6.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSE7.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSE8.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSF1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSF2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSF3.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSF4.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSF5.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSF6.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSF7.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSF8.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSG1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSG2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSG3.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSG4.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSG5.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSG6.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSG7.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSG8.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSH1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSH2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSH3.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSH4.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSH5.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSH6.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSH7.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSH8.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSI0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSJ0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSK0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSL0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSM0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\dogs\DOGSN0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\iceca0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\icecb0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\icecc0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\icecd0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\pista0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\rsmka0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\rsmkb0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\rsmkc0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\rsmkd0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\rsmke0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\spkra0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\tlgla0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\tlglb0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\tlglc0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\tlgld0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\tlgle0.png" />
+    <None Include="D:\gzdoom custom\wadsrc\static\sprites\tnt1a0.lmp" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\sprites\unkna0.png" />
+    <None Include="D:\gzdoom custom\wadsrc\static\strifehelp.acs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\teaminfo.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\terrain.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\textcolors.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\textures.txt" />
+    <Image Include="D:\gzdoom custom\wadsrc\static\textures\-noflat-.png" />
+    <None Include="D:\gzdoom custom\wadsrc\static\things.h.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\vga-rom-font.16" />
+    <None Include="D:\gzdoom custom\wadsrc\static\x11r6rgb.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\xg.wopn" />
+    <None Include="D:\gzdoom custom\wadsrc\static\xhairs.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\xlat\base.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\xlat\defines.i" />
+    <None Include="D:\gzdoom custom\wadsrc\static\xlat\doom.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\xlat\doom_base.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\xlat\eternity.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\xlat\heretic.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\xlat\heretic_base.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\xlat\strife.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\xlat\strife_base.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript.txt" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\actions.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\actor.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\attacks.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\checks.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\chex\chexammo.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\chex\chexdecorations.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\chex\chexitems.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\chex\chexkeys.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\chex\chexmonsters.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\chex\chexplayer.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\chex\chexweapons.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\arachnotron.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\archvile.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\bossbrain.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\bruiser.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\cacodemon.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\cyberdemon.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\deadthings.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\demon.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\doomammo.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\doomarmor.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\doomartifacts.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\doomdecorations.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\doomhealth.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\doomimp.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\doomkeys.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\doommisc.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\doomplayer.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\doomweapons.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\fatso.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\keen.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\lostsoul.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\painelemental.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\possessed.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\revenant.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\scriptedmarine.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\spidermaster.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\stealthmonsters.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\weaponbfg.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\weaponchaingun.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\weaponchainsaw.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\weaponfist.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\weaponpistol.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\weaponplasma.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\weaponrlaunch.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\weaponshotgun.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\doom\weaponssg.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\beast.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\chicken.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\clink.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\dsparil.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\hereticammo.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\hereticarmor.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\hereticartifacts.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\hereticdecorations.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\hereticimp.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\heretickeys.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\hereticmisc.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\hereticplayer.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\ironlich.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\knight.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\mummy.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\snake.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\weaponblaster.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\weaponcrossbow.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\weapongauntlets.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\weaponmace.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\weaponphoenix.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\weaponskullrod.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\weaponstaff.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\weaponwand.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\heretic\wizard.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\baseweapons.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\bats.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\bishop.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\blastradius.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\boostarmor.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\centaur.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\clericboss.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\clericflame.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\clericholy.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\clericmace.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\clericplayer.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\clericstaff.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\demons.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\dragon.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\ettin.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\fighteraxe.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\fighterboss.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\fighterfist.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\fighterhammer.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\fighterplayer.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\fighterquietus.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\firedemon.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\flame.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\flechette.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\flies.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\fog.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\healingradius.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\heresiarch.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\hexenarmor.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\hexendecorations.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\hexenkeys.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\hexenspecialdecs.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\iceguy.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\korax.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\mageboss.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\magecone.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\magelightning.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\mageplayer.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\magestaff.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\magewand.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\mana.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\pig.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\puzzleitems.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\scriptprojectiles.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\serpent.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\speedboots.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\spike.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\summon.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\teleportother.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\hexen\wraith.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\interaction.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\inventory\ammo.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\inventory\armor.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\inventory\health.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\inventory\inv_misc.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\inventory\inventory.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\inventory\powerups.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\inventory\stateprovider.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\inventory\weaponpiece.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\inventory\weapons.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\inventory_util.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\morph.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\player\player.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\player\player_cheat.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\player\player_inventory.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\player\player_morph.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\raven\artiegg.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\raven\artitele.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\raven\minotaur.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\raven\ravenambient.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\raven\ravenartifacts.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\raven\ravenhealth.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\blood.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\botstuff.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\bridge.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\camera.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\debris.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\decal.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\dog.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\dynlights.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\fastprojectile.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\fountain.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\hatetarget.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\ice.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\itemeffects.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\mapmarker.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\movingcamera.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\randomspawner.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\secrettrigger.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\sectoraction.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\setcolor.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\sharedmisc.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\skies.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\soundenvironment.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\soundsequence.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\spark.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\specialspot.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\splashes.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\teleport.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\shared\waterzone.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\acolyte.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\alienspectres.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\beggars.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\coin.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\crusader.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\entityboss.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\inquisitor.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\klaxon.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\loremaster.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\macil.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\merchants.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\oracle.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\peasants.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\programmer.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\questitems.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\ratbuddy.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\reaver.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\rebels.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\sentinel.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\sigil.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\spectral.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\stalker.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\strifeammo.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\strifearmor.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\strifebishop.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\strifefunctions.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\strifehumanoid.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\strifeitems.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\strifekeys.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\strifeplayer.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\strifestuff.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\strifeweapons.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\svelights.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\svestuff.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\templar.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\thingstoblowup.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\weaponassault.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\weaponcrossbow.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\weapondagger.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\weaponflamer.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\weapongrenade.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\weaponmauler.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\weaponmissile.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\actors\strife\zombie.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\base.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\compatibility.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\constants.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\destructible.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\dynarrays.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\events.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\level_compatibility.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\mapdata.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\scriptutil\scriptutil.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\sounddata.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\colorpickermenu.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\conversationmenu.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\joystickmenu.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\listmenu.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\listmenuitems.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\loadsavemenu.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\menu.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\menuitembase.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\messagebox.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\optionmenu.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\optionmenuitems.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\playercontrols.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\playerdisplay.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\playermenu.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\readthis.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\reverbedit.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\search\anyoralloption.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\search\menu.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\search\query.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\search\searchfield.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\menu\textentermenu.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\statscreen\statscreen.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\statscreen\statscreen_coop.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\statscreen\statscreen_dm.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\statscreen\statscreen_sp.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\statscreen\types.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\statusbar\alt_hud.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\statusbar\doom_sbar.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\statusbar\harm_sbar.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\statusbar\heretic_sbar.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\statusbar\hexen_sbar.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\statusbar\sbarinfowrapper.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\statusbar\statusbar.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\ui\statusbar\strife_sbar.zs" />
+    <None Include="D:\gzdoom custom\wadsrc\static\zscript\zscript_license.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\gzdoom custom\Solution\ZERO_CHECK.vcxproj">
+      <Project>{04ABC131-AD09-38DC-BFC9-4D2E60FEE331}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\src\zdoom.vcxproj">
+      <Project>{3DE52E9D-4F0E-3749-AA97-D64171AA87F5}</Project>
+      <Name>zdoom</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\tools\zipdir\zipdir.vcxproj">
+      <Project>{3974EFB5-B72A-3780-896D-398CBD35B950}</Project>
+      <Name>zipdir</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

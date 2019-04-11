@@ -78,6 +78,7 @@ void FLightDefaults::ApplyProperties(FDynamicLight * light) const
 	light->specialf1 = m_Param;
 	light->pArgs = m_Args;
 	light->pLightFlags = &m_lightFlags;
+	
 	if (m_lightFlags & LF_SPOT)
 	{
 		light->pSpotInnerAngle = &m_spotInnerAngle;

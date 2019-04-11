@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D8F2CB62-275B-3A82-B0CB-2D07E4355CF5}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gzdoom custom\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/gzdoom custom/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/gzdoom custom" "-BD:/gzdoom custom/Solution" --check-stamp-file "D:/gzdoom custom/Solution/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/gzdoom custom/CMakeLists.txt;D:\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.14\Modules\FindBZip2.cmake;D:\CMake\share\cmake-3.14\Modules\FindJPEG.cmake;D:\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.14\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;D:\gzdoom custom\CMakeLists.txt;D:\gzdoom custom\Solution\CMakeFiles\3.14.1\CMakeCCompiler.cmake;D:\gzdoom custom\Solution\CMakeFiles\3.14.1\CMakeCXXCompiler.cmake;D:\gzdoom custom\Solution\CMakeFiles\3.14.1\CMakeRCCompiler.cmake;D:\gzdoom custom\Solution\CMakeFiles\3.14.1\CMakeSystem.cmake;D:\gzdoom custom\Solution\CMakeFiles\feature_tests.c;D:\gzdoom custom\Solution\CMakeFiles\feature_tests.cxx;D:\gzdoom custom\Solution\arch.c;D:\gzdoom custom\cmake\TargetArch.cmake;D:\gzdoom custom\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gzdoom custom\Solution\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/gzdoom custom/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/gzdoom custom" "-BD:/gzdoom custom/Solution" --check-stamp-file "D:/gzdoom custom/Solution/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/gzdoom custom/CMakeLists.txt;D:\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.14\Modules\FindBZip2.cmake;D:\CMake\share\cmake-3.14\Modules\FindJPEG.cmake;D:\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.14\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;D:\gzdoom custom\CMakeLists.txt;D:\gzdoom custom\Solution\CMakeFiles\3.14.1\CMakeCCompiler.cmake;D:\gzdoom custom\Solution\CMakeFiles\3.14.1\CMakeCXXCompiler.cmake;D:\gzdoom custom\Solution\CMakeFiles\3.14.1\CMakeRCCompiler.cmake;D:\gzdoom custom\Solution\CMakeFiles\3.14.1\CMakeSystem.cmake;D:\gzdoom custom\Solution\CMakeFiles\feature_tests.c;D:\gzdoom custom\Solution\CMakeFiles\feature_tests.cxx;D:\gzdoom custom\Solution\arch.c;D:\gzdoom custom\cmake\TargetArch.cmake;D:\gzdoom custom\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gzdoom custom\Solution\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/gzdoom custom/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/gzdoom custom" "-BD:/gzdoom custom/Solution" --check-stamp-file "D:/gzdoom custom/Solution/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/gzdoom custom/CMakeLists.txt;D:\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.14\Modules\FindBZip2.cmake;D:\CMake\share\cmake-3.14\Modules\FindJPEG.cmake;D:\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.14\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;D:\gzdoom custom\CMakeLists.txt;D:\gzdoom custom\Solution\CMakeFiles\3.14.1\CMakeCCompiler.cmake;D:\gzdoom custom\Solution\CMakeFiles\3.14.1\CMakeCXXCompiler.cmake;D:\gzdoom custom\Solution\CMakeFiles\3.14.1\CMakeRCCompiler.cmake;D:\gzdoom custom\Solution\CMakeFiles\3.14.1\CMakeSystem.cmake;D:\gzdoom custom\Solution\CMakeFiles\feature_tests.c;D:\gzdoom custom\Solution\CMakeFiles\feature_tests.cxx;D:\gzdoom custom\Solution\arch.c;D:\gzdoom custom\cmake\TargetArch.cmake;D:\gzdoom custom\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gzdoom custom\Solution\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/gzdoom custom/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/gzdoom custom" "-BD:/gzdoom custom/Solution" --check-stamp-file "D:/gzdoom custom/Solution/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/gzdoom custom/CMakeLists.txt;D:\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;D:\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.14\Modules\FindBZip2.cmake;D:\CMake\share\cmake-3.14\Modules\FindJPEG.cmake;D:\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.14\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;D:\gzdoom custom\CMakeLists.txt;D:\gzdoom custom\Solution\CMakeFiles\3.14.1\CMakeCCompiler.cmake;D:\gzdoom custom\Solution\CMakeFiles\3.14.1\CMakeCXXCompiler.cmake;D:\gzdoom custom\Solution\CMakeFiles\3.14.1\CMakeRCCompiler.cmake;D:\gzdoom custom\Solution\CMakeFiles\3.14.1\CMakeSystem.cmake;D:\gzdoom custom\Solution\CMakeFiles\feature_tests.c;D:\gzdoom custom\Solution\CMakeFiles\feature_tests.cxx;D:\gzdoom custom\Solution\arch.c;D:\gzdoom custom\cmake\TargetArch.cmake;D:\gzdoom custom\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gzdoom custom\Solution\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\gzdoom custom\Solution\ZERO_CHECK.vcxproj">
+      <Project>{04ABC131-AD09-38DC-BFC9-4D2E60FEE331}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\asmjit\asmjit.vcxproj">
+      <Project>{02576D58-60D3-3708-9E0F-B5605BE79D20}</Project>
+      <Name>asmjit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\wadsrc_bm\brightmaps_pk3.vcxproj">
+      <Project>{2835A882-3FD9-3591-9E1F-AB175951F085}</Project>
+      <Name>brightmaps_pk3</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\bzip2\bz2.vcxproj">
+      <Project>{A85C73D6-7E70-3146-B740-5671A439B553}</Project>
+      <Name>bz2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\dumb\dumb.vcxproj">
+      <Project>{A5390951-7378-36A1-AE3B-5E6A3D356D92}</Project>
+      <Name>dumb</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\gdtoa\gdtoa.vcxproj">
+      <Project>{B8339B54-5BDB-382F-9DBD-B8335F060CDB}</Project>
+      <Name>gdtoa</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\game-music-emu\gme\gme.vcxproj">
+      <Project>{A1172C8E-21A1-36AB-B958-73A75B4A35CA}</Project>
+      <Name>gme</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\wadsrc\gzdoom_pk3.vcxproj">
+      <Project>{FFD3BB28-32F3-3D19-9A12-BED9F226E805}</Project>
+      <Name>gzdoom_pk3</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\jpeg\jpeg.vcxproj">
+      <Project>{4633D046-AF47-3EDF-BD76-379CC3751485}</Project>
+      <Name>jpeg</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\tools\lemon\lemon.vcxproj">
+      <Project>{5CF3E57E-68D9-3E6E-9D11-8D44D98FFFFA}</Project>
+      <Name>lemon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\wadsrc_lights\lights_pk3.vcxproj">
+      <Project>{03BB4707-1A98-3B5E-8DD9-52C9A3464EAE}</Project>
+      <Name>lights_pk3</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\lzma\lzma.vcxproj">
+      <Project>{2CC14B68-E0A6-3304-BD4E-DF3DC29AC0E4}</Project>
+      <Name>lzma</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\tools\re2c\re2c.vcxproj">
+      <Project>{57B4DA7B-9A6E-372B-835C-651E40A46A71}</Project>
+      <Name>re2c</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\src\revision_check.vcxproj">
+      <Project>{F784E510-0913-3A23-A0ED-B6A422828E36}</Project>
+      <Name>revision_check</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\tools\updaterevision\updaterevision.vcxproj">
+      <Project>{F4A1910A-AA7E-3390-AEB7-3C4D02947B95}</Project>
+      <Name>updaterevision</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\zlib\z.vcxproj">
+      <Project>{A5B91747-2625-36F2-9A80-9DA2F4B7D986}</Project>
+      <Name>z</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\wadsrc_extra\zd_extra_pk3.vcxproj">
+      <Project>{191E146C-CEE5-30CE-B3C9-179A492FA6B8}</Project>
+      <Name>zd_extra_pk3</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\src\zdoom.vcxproj">
+      <Project>{3DE52E9D-4F0E-3749-AA97-D64171AA87F5}</Project>
+      <Name>zdoom</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\tools\zipdir\zipdir.vcxproj">
+      <Project>{3974EFB5-B72A-3780-896D-398CBD35B950}</Project>
+      <Name>zipdir</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -243,6 +243,8 @@ class FShader
 	FBufferedUniform1i muLightIndex;
 	FBufferedUniformPE muFogColor;
 	FBufferedUniform4f muDynLightColor;
+	FBufferedUniform1i muDynLightLinearAttenuation;
+	FBufferedUniform1f muDynLightAttenuationCoefficient;
 	FBufferedUniformPE muObjectColor;
 	FBufferedUniformPE muObjectColor2;
 	FBufferedUniformPE muAddColor;

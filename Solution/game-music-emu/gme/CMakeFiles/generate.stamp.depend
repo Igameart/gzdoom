@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+D:/CMake/share/cmake-3.14/Modules/FindPackageHandleStandardArgs.cmake
+D:/CMake/share/cmake-3.14/Modules/FindPackageMessage.cmake
+D:/CMake/share/cmake-3.14/Modules/FindZLIB.cmake
+D:/gzdoom custom/game-music-emu/gme/CMakeLists.txt

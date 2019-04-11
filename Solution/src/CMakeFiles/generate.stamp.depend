@@ -1,0 +1,14 @@
+# CMake generation dependency list for this directory.
+D:/CMake/share/cmake-3.14/Modules/CheckCXXCompilerFlag.cmake
+D:/CMake/share/cmake-3.14/Modules/CheckCXXSourceCompiles.cmake
+D:/CMake/share/cmake-3.14/Modules/CheckFunctionExists.c
+D:/CMake/share/cmake-3.14/Modules/CheckFunctionExists.cmake
+D:/CMake/share/cmake-3.14/Modules/CheckIncludeFile.cmake
+D:/CMake/share/cmake-3.14/Modules/CheckIncludeFiles.cmake
+D:/CMake/share/cmake-3.14/Modules/CheckLibraryExists.cmake
+D:/CMake/share/cmake-3.14/Modules/FindPackageHandleStandardArgs.cmake
+D:/CMake/share/cmake-3.14/Modules/FindPackageMessage.cmake
+D:/CMake/share/cmake-3.14/Modules/FindPkgConfig.cmake
+D:/gzdoom custom/cmake/FindFluidSynth.cmake
+D:/gzdoom custom/cmake/precompiled_headers.cmake
+D:/gzdoom custom/src/CMakeLists.txt

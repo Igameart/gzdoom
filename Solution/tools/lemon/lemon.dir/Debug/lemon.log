@@ -1,0 +1,8 @@
+﻿  Building Custom Rule D:/gzdoom custom/tools/lemon/CMakeLists.txt
+  CMake does not need to re-run because D:/gzdoom custom/Solution/tools/lemon/CMakeFiles/generate.stamp is up-to-date.
+  lemon.c
+D:\gzdoom custom\tools\lemon\lemon.c(419): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+D:\gzdoom custom\tools\lemon\lemon.c(1960): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\gzdoom custom\tools\lemon\lemon.c(1971): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  lemon.vcxproj -> D:\gzdoom custom\Solution\tools\lemon\Debug\lemon.exe
+  "D:/gzdoom custom/Solution/tools/lemon/Debug"

@@ -391,7 +391,7 @@ namespace swrenderer
 
 				// Include light only if it touches this column
 				float radius = cur_node->lightsource->GetRadius();
-				if (radius * radius >= lconstant && nlconstant >= 0.0f)
+				if ((radius * radius) >= lconstant && nlconstant >= 0.0f)
 				{
 					uint32_t red = cur_node->lightsource->GetRed();
 					uint32_t green = cur_node->lightsource->GetGreen();

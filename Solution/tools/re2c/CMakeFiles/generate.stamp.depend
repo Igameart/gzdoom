@@ -1,0 +1,19 @@
+# CMake generation dependency list for this directory.
+D:/CMake/share/cmake-3.14/Modules/CheckFunctionExists.c
+D:/CMake/share/cmake-3.14/Modules/CheckFunctionExists.cmake
+D:/CMake/share/cmake-3.14/Modules/CheckIncludeFile.cmake
+D:/CMake/share/cmake-3.14/Modules/CheckIncludeFileCXX.cmake
+D:/CMake/share/cmake-3.14/Modules/CheckTypeSize.c.in
+D:/CMake/share/cmake-3.14/Modules/CheckTypeSize.cmake
+D:/gzdoom custom/Solution/CMakeFiles/CheckTypeSize/SIZEOF_0I8.c
+D:/gzdoom custom/Solution/CMakeFiles/CheckTypeSize/SIZEOF_0L.c
+D:/gzdoom custom/Solution/CMakeFiles/CheckTypeSize/SIZEOF_0LL.c
+D:/gzdoom custom/Solution/CMakeFiles/CheckTypeSize/SIZEOF_CHAR.c
+D:/gzdoom custom/Solution/CMakeFiles/CheckTypeSize/SIZEOF_INT.c
+D:/gzdoom custom/Solution/CMakeFiles/CheckTypeSize/SIZEOF_LONG.c
+D:/gzdoom custom/Solution/CMakeFiles/CheckTypeSize/SIZEOF_LONG_LONG.c
+D:/gzdoom custom/Solution/CMakeFiles/CheckTypeSize/SIZEOF_SHORT.c
+D:/gzdoom custom/Solution/CMakeFiles/CheckTypeSize/SIZEOF_VOID_P.c
+D:/gzdoom custom/Solution/CMakeFiles/CheckTypeSize/SIZEOF___INT_64.c
+D:/gzdoom custom/tools/re2c/CMakeLists.txt
+D:/gzdoom custom/tools/re2c/config.h.in

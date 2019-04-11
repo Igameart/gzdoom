@@ -56,7 +56,6 @@ CVAR(Bool, os_isanyof, true, CVAR_ARCHIVE);
 
 
 
-
 CUSTOM_CVAR (Bool, gl_lights, true, CVAR_ARCHIVE | CVAR_GLOBALCONFIG | CVAR_NOINITCALL)
 {
 	for (auto Level : AllLevels())

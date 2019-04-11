@@ -1,0 +1,10 @@
+﻿  Generating ../lights.pk3
+  Adding filter/doom.doom1/gldefs.txt             84.7% [  3228/ 21102] Deflate
+  Adding filter/doom.doom2/gldefs.txt             84.7% [  3228/ 21102] Deflate
+  Adding filter/doom.freedoom/gldefs.txt          84.2% [  2946/ 18701] Deflate
+  Adding filter/heretic/gldefs.txt                86.2% [  4425/ 31995] Deflate
+  Adding filter/hexen/gldefs.txt                  87.1% [  3691/ 28581] Deflate
+  Adding filter/strife/gldefs.txt                 87.5% [  5805/ 46487] Deflate
+  D:/gzdoom custom/Solution/lights.pk3 contains 6 files (updated 6)
+  Building Custom Rule D:/gzdoom custom/wadsrc_lights/CMakeLists.txt
+  CMake does not need to re-run because D:/gzdoom custom/Solution/wadsrc_lights/CMakeFiles/generate.stamp is up-to-date.

@@ -1,0 +1,1609 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{191E146C-CEE5-30CE-B3C9-179A492FA6B8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>zd_extra_pk3</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gzdoom custom\Solution\CMakeFiles\ede76a521d329f5de427ff8c599dfc6d\zd_extra.pk3.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../zd_extra.pk3</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\tools\zipdir\Debug\zipdir.exe -udf "D:/gzdoom custom/Solution/zd_extra.pk3" "D:/gzdoom custom/wadsrc_extra/static"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/gzdoom custom/Solution/zd_extra.pk3" "D:/gzdoom custom/Solution/Debug/zd_extra.pk3"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/gzdoom custom/Solution/CMakeFiles/ede76a521d329f5de427ff8c599dfc6d/zd_extra.pk3.rule;D:\gzdoom custom\Solution\tools\zipdir\Debug\zipdir.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gzdoom custom\Solution\zd_extra.pk3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../zd_extra.pk3</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\tools\zipdir\Release\zipdir.exe -udf "D:/gzdoom custom/Solution/zd_extra.pk3" "D:/gzdoom custom/wadsrc_extra/static"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/gzdoom custom/Solution/zd_extra.pk3" "D:/gzdoom custom/Solution/Release/zd_extra.pk3"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/gzdoom custom/Solution/CMakeFiles/ede76a521d329f5de427ff8c599dfc6d/zd_extra.pk3.rule;D:\gzdoom custom\Solution\tools\zipdir\Release\zipdir.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gzdoom custom\Solution\zd_extra.pk3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ../zd_extra.pk3</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\tools\zipdir\MinSizeRel\zipdir.exe -udf "D:/gzdoom custom/Solution/zd_extra.pk3" "D:/gzdoom custom/wadsrc_extra/static"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/gzdoom custom/Solution/zd_extra.pk3" "D:/gzdoom custom/Solution/MinSizeRel/zd_extra.pk3"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/gzdoom custom/Solution/CMakeFiles/ede76a521d329f5de427ff8c599dfc6d/zd_extra.pk3.rule;D:\gzdoom custom\Solution\tools\zipdir\MinSizeRel\zipdir.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gzdoom custom\Solution\zd_extra.pk3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../zd_extra.pk3</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\tools\zipdir\RelWithDebInfo\zipdir.exe -udf "D:/gzdoom custom/Solution/zd_extra.pk3" "D:/gzdoom custom/wadsrc_extra/static"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/gzdoom custom/Solution/zd_extra.pk3" "D:/gzdoom custom/Solution/RelWithDebInfo/zd_extra.pk3"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/gzdoom custom/Solution/CMakeFiles/ede76a521d329f5de427ff8c599dfc6d/zd_extra.pk3.rule;D:\gzdoom custom\Solution\tools\zipdir\RelWithDebInfo\zipdir.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gzdoom custom\Solution\zd_extra.pk3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gzdoom custom\Solution\CMakeFiles\50f6594cdd8a7a7e8cb7c0c82e9b8af1\zd_extra_pk3.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe -E touch "D:/gzdoom custom/Solution/tools/zipdir/Debug/zipdir.exe"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/gzdoom custom/Solution/CMakeFiles/50f6594cdd8a7a7e8cb7c0c82e9b8af1/zd_extra_pk3.rule;D:\gzdoom custom\Solution\zd_extra.pk3;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gzdoom custom\Solution\wadsrc_extra\CMakeFiles\zd_extra_pk3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe -E touch "D:/gzdoom custom/Solution/tools/zipdir/Release/zipdir.exe"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/gzdoom custom/Solution/CMakeFiles/50f6594cdd8a7a7e8cb7c0c82e9b8af1/zd_extra_pk3.rule;D:\gzdoom custom\Solution\zd_extra.pk3;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gzdoom custom\Solution\wadsrc_extra\CMakeFiles\zd_extra_pk3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe -E touch "D:/gzdoom custom/Solution/tools/zipdir/MinSizeRel/zipdir.exe"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/gzdoom custom/Solution/CMakeFiles/50f6594cdd8a7a7e8cb7c0c82e9b8af1/zd_extra_pk3.rule;D:\gzdoom custom\Solution\zd_extra.pk3;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gzdoom custom\Solution\wadsrc_extra\CMakeFiles\zd_extra_pk3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe -E touch "D:/gzdoom custom/Solution/tools/zipdir/RelWithDebInfo/zipdir.exe"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/gzdoom custom/Solution/CMakeFiles/50f6594cdd8a7a7e8cb7c0c82e9b8af1/zd_extra_pk3.rule;D:\gzdoom custom\Solution\zd_extra.pk3;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gzdoom custom\Solution\wadsrc_extra\CMakeFiles\zd_extra_pk3</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gzdoom custom\wadsrc_extra\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/gzdoom custom/wadsrc_extra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/gzdoom custom" "-BD:/gzdoom custom/Solution" --check-stamp-file "D:/gzdoom custom/Solution/wadsrc_extra/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/gzdoom custom/wadsrc_extra/CMakeLists.txt;D:\gzdoom custom\wadsrc_extra\CMakeLists.txt;D:\gzdoom custom\wadsrc_extra\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gzdoom custom\Solution\wadsrc_extra\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/gzdoom custom/wadsrc_extra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/gzdoom custom" "-BD:/gzdoom custom/Solution" --check-stamp-file "D:/gzdoom custom/Solution/wadsrc_extra/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/gzdoom custom/wadsrc_extra/CMakeLists.txt;D:\gzdoom custom\wadsrc_extra\CMakeLists.txt;D:\gzdoom custom\wadsrc_extra\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gzdoom custom\Solution\wadsrc_extra\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/gzdoom custom/wadsrc_extra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/gzdoom custom" "-BD:/gzdoom custom/Solution" --check-stamp-file "D:/gzdoom custom/Solution/wadsrc_extra/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/gzdoom custom/wadsrc_extra/CMakeLists.txt;D:\gzdoom custom\wadsrc_extra\CMakeLists.txt;D:\gzdoom custom\wadsrc_extra\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gzdoom custom\Solution\wadsrc_extra\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/gzdoom custom/wadsrc_extra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe "-SD:/gzdoom custom" "-BD:/gzdoom custom/Solution" --check-stamp-file "D:/gzdoom custom/Solution/wadsrc_extra/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/gzdoom custom/wadsrc_extra/CMakeLists.txt;D:\gzdoom custom\wadsrc_extra\CMakeLists.txt;D:\gzdoom custom\wadsrc_extra\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gzdoom custom\Solution\wadsrc_extra\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\gzdoom custom\Solution\wadsrc_extra\CMakeFiles\zd_extra_pk3" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0021.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0022.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0023.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0024.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0025.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0027.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0028.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0029.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\002A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\002B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\002C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\002D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\002E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\002F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0030.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0031.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0032.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0033.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0034.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0035.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0036.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0037.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0038.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0039.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\003A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\003B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\003C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\003D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\003E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\003F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0041.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0042.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0043.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0044.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0045.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0046.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0047.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0048.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0049.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\004A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\004B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\004C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\004D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\004E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\004F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0050.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0051.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0052.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0053.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0054.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0055.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0056.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0057.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0058.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0059.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\005A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\005B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\005C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\005D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\005E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\005F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\bigfont\0060.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00A1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00AB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00BB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00BF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00C0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00C1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00C2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00C3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00C4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00C5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00C7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00C8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00C9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00CA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00CB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00CC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00CD.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00CE.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00CF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00D1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00D3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00D4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00D5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00D6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00D9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00DA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00DB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\00DC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0150.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0152.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0170.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0178.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0401.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0402.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0408.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0409.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\040A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\040B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\040D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\040F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0410.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0411.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0412.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0413.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0414.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0415.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0416.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0417.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0418.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0419.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\041A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\041B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\041C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\041D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\041E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\041F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0420.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0421.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0422.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0423.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0424.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0425.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0426.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0427.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0428.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\0429.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\042A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\042B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\042C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\042D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\042E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\042F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\1E9E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\2014.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\201C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-chex\fonts\defsmallfont\201E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0021.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0022.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0023.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0024.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0025.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0026.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0027.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0028.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0029.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\002A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\002B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\002C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\002D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\002E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\002F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0030.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0031.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0032.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0033.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0034.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0035.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0036.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0037.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0038.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0039.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\003A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\003B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\003C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\003D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\003E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\003F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0040.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0041.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0042.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0043.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0044.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0045.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0046.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0047.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0048.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0049.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\004A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\004B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\004C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\004D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\004E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\004F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0050.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0051.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0052.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0053.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0054.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0055.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0056.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0057.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0058.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0059.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\005A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\005B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\005C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\005D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\005E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\005F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0060.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00A1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00AB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00BB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00BF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00C0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00C1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00C2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00C3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00C4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00C5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00C6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00C7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00C8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00C9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00CA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00CB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00CC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00CD.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00CE.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00CF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00D0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00D1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00D2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00D3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00D4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00D5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00D6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00D8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00D9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00DA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00DB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00DC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00DD.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\00DE.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0110.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0150.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0152.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0170.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0178.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0401.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0402.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0403.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0404.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0405.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0406.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0407.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0408.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0409.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\040A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\040B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\040C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\040D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\040E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\040F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0410.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0411.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0412.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0413.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0414.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0415.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0416.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0417.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0418.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0419.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\041A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\041B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\041C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\041D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\041E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\041F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0420.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0421.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0422.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0423.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0424.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0425.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0426.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0427.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0428.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0429.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\042A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\042B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\042C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\042D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\042E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\042F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\0490.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\1E9E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\2013.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\201C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\201D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\201E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigfont\font.inf" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0021.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0022.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0023.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0024.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0025.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0026.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0027.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0028.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0029.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\002A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\002B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\002C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\002D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\002E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\002F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0030.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0031.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0032.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0033.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0034.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0035.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0036.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0037.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0038.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0039.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\003A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\003B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\003C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\003D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\003E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\003F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0040.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0041.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0042.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0043.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0044.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0045.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0046.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0047.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0048.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0049.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\004A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\004B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\004C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\004D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\004E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\004F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0050.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0051.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0052.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0053.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0054.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0055.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0056.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0057.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0058.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0059.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\005A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\005B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\005C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\005D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\005E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\005F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0060.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0061.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0062.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0063.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0064.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0065.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0066.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0067.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0068.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0069.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\006A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\006B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\006C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\006D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\006E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\006F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0070.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0071.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0072.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0073.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0074.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0075.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0076.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0077.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0078.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0079.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\007A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00A1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00AB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00BB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00BF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00C0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00C1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00C2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00C3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00C4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00C5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00C6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00C7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00C8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00C9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00CA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00CB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00CC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00CD.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00CE.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00CF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00D0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00D1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00D2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00D3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00D4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00D5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00D6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00D8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00D9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00DA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00DB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00DC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00DD.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00DE.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00DF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00E0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00E1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00E2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00E3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00E4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00E5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00E6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00E7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00E8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00E9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00EA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00EB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00EC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00ED.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00EE.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00EF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00F0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00F1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00F2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00F3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00F4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00F5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00F6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00F8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00F9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00FA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00FB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00FC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00FD.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00FE.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\00FF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0110.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0111.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0150.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0151.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0152.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0153.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0170.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0171.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0178.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0401.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0402.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0403.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0404.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0405.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0406.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0407.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0408.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0409.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\040A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\040B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\040C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\040D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\040E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\040F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0410.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0411.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0412.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0413.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0414.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0415.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0416.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0417.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0418.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0419.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\041A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\041B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\041C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\041D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\041E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\041F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0420.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0421.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0422.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0423.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0424.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0425.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0426.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0427.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0428.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0429.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\042A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\042B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\042C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\042D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\042E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\042F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0430.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0431.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0432.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0433.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0434.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0435.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0436.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0437.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0438.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0439.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\043A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\043B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\043C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\043D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\043E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\043F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0440.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0441.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0442.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0443.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0444.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0445.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0446.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0447.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0448.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0449.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\044A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\044B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\044C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\044D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\044E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\044F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0451.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0452.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0453.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0454.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0455.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0456.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0457.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0458.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0459.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\045A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\045B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\045C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\045D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\045E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\045F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0490.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\0491.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\1E9E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\2013.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\201C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\201D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\201E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\bigupper\font.inf" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00A1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00AB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00BB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00BF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00C0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00C1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00C2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00C3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00C4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00C5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00C7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00C8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00C9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00CA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00CB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00CC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00CD.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00CE.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00CF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00D1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00D3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00D4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00D5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00D6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00D9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00DA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00DB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\00DC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0150.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0152.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0170.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0178.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0401.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0402.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0408.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0409.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\040A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\040B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\040D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\040F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0410.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0411.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0412.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0413.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0414.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0415.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0416.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0417.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0418.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0419.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\041A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\041B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\041C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\041D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\041E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\041F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0420.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0421.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0422.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0423.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0424.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0425.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0426.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0427.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0428.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\0429.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\042A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\042B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\042C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\042D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\042E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\042F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\1E9E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\2014.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\201C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-doom\fonts\defsmallfont\201E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00AB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00BB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00BF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00C0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00C1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00C2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00C3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00C4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00C7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00C8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00C9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00CA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00CB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00CC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00CD.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00CE.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00CF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00D1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00D2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00D3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00D4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00D5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00D6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00D9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00DA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00DB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\00DC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0150.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0152.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0170.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0178.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0401.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0402.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0407.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0408.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0409.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\040A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\040B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\040F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0410.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0411.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0412.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0413.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0414.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0415.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0416.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0417.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0418.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0419.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\041A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\041B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\041C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\041D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\041E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\041F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0420.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0421.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0422.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0423.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0424.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0425.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0426.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0427.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0428.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\0429.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\042A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\042B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\042C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\042D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\042E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\042F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\1E9E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\201C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\201D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defbigfont\201E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\005C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\005D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\005E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\005F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00A1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00AB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00BB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00BF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00C0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00C1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00C2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00C3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00C4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00C5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00C7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00C8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00C9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00CA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00CB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00CC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00CD.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00CE.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00CF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00D1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00D2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00D3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00D4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00D5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00D6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00D9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00DA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00DB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\00DC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0150.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0152.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0170.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0178.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0401.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0402.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0407.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0408.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0409.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\040A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\040B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\040F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0410.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0411.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0412.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0413.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0414.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0415.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0416.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0417.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0418.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0419.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\041A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\041B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\041C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\041D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\041E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\041F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0420.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0421.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0422.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0423.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0424.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0425.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0426.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0427.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0428.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\0429.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\042A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\042B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\042C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\042D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\042E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\042F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\1E9E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\2014.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\201C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\201D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-heretic\fonts\defsmallfont\201E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00AB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00BB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00BF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00C0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00C1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00C2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00C3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00C4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00C7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00C8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00C9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00CA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00CB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00CC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00CD.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00CE.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00CF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00D1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00D2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00D3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00D4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00D5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00D6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00D9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00DA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00DB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\00DC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0150.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0152.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0170.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0178.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0401.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0402.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0407.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0408.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0409.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\040A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\040B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\040F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0410.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0411.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0412.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0413.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0414.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0415.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0416.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0417.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0418.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0419.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\041A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\041B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\041C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\041D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\041E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\041F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0420.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0421.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0422.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0423.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0424.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0425.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0426.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0427.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0428.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\0429.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\042A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\042B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\042C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\042D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\042E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\042F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\1E9E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\201C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\201D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defbigfont\201E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\005C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\005D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\005E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\005F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00A1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00AB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00BB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00BF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00C0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00C1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00C2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00C3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00C4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00C5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00C7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00C8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00C9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00CA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00CB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00CC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00CD.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00CE.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00CF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00D1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00D2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00D3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00D4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00D5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00D6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00D9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00DA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00DB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\00DC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0150.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0152.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0170.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0178.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0401.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0402.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0407.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0408.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0409.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\040A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\040B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\040F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0410.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0411.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0412.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0413.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0414.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0415.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0416.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0417.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0418.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0419.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\041A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\041B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\041C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\041D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\041E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\041F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0420.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0421.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0422.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0423.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0424.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0425.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0426.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0427.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0428.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\0429.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\042A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\042B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\042C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\042D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\042E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\042F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\1E9E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\2014.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\201C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\201D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-hexen\fonts\defsmallfont\201E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0021.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0022.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0025.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0027.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\002B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\002C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\002D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\002E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\002F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0030.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0031.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0032.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0033.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0034.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0035.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0036.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0037.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0038.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0039.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\003A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\003B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0041.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0042.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0043.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0044.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0045.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0046.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0047.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0048.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0049.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\004A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\004B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\004C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\004D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\004E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\004F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0050.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0051.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0052.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0053.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0054.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0055.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0056.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0057.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0058.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0059.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\005A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00A1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00AB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00BB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00C0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00C1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00C2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00C4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00C7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00C8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00C9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00CA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00CB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00CC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00CD.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00CE.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00CF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00D1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00D2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00D3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00D4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00D6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00D9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00DA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00DB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00DC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\00DD.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0150.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0152.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0170.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0178.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0401.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0410.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0411.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0412.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0413.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0414.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0415.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0416.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0417.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0418.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0419.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\041A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\041B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\041C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\041D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\041E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\041F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0420.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0421.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0422.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0423.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0424.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0425.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0426.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0427.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0428.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\0429.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\042A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\042B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\042C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\042D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\042E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\042F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\1E9E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\201C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\201D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\201E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\bigfont\font.inf" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00A1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00AB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00BB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00BF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00C0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00C1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00C2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00C4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00C7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00C8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00C9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00CA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00CB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00CC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00CD.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00CE.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00CF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00D1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00D2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00D3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00D4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00D6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00D9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00DA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00DB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00DC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\00DD.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0150.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0152.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0170.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0178.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0401.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0410.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0411.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0412.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0413.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0414.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0415.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0416.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0417.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0418.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0419.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\041A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\041B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\041C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\041D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\041E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\041F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0420.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0421.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0422.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0423.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0424.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0425.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0426.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0427.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0428.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\0429.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\042A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\042B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\042C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\042D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\042E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\042F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\1E9E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\2014.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\201C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\201D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\201E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont\font.inf" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00A1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00AB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00BB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00BF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00C0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00C1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00C2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00C4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00C7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00C8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00C9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00CA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00CB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00CC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00CD.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00CE.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00CF.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00D1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00D2.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00D3.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00D4.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00D6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00D9.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00DA.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00DB.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00DC.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\00DD.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0150.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0152.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0170.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0178.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0401.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0410.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0411.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0412.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0413.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0414.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0415.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0416.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0417.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0418.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0419.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\041A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\041B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\041C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\041D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\041E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\041F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0420.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0421.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0422.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0423.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0424.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0425.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0426.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0427.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0428.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\0429.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\042A.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\042B.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\042C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\042D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\042E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\042F.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\1E9E.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\2014.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\201C.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\201D.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\filter\game-strife\fonts\defsmallfont2\201E.lmp" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\graphics\artibox.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\graphics\chexcurs.png" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\graphics\clerface.lmp" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\graphics\doomcurs.png" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\graphics\fiteface.lmp" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\graphics\herecurs.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\graphics\hexncurs.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\graphics\invgeml1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\graphics\invgeml2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\graphics\invgemr1.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\graphics\invgemr2.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\graphics\m_back_d.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\graphics\m_back_h.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\graphics\m_back_s.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\graphics\m_back_x.png" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\graphics\mageface.lmp" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\graphics\selectbo.png" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\graphics\stfbany.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\graphics\stkeys6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\graphics\stkeys7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\graphics\stkeys8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\graphics\stpbany.lmp" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\graphics\strfcurs.png" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\graphics\wislash.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\language.csv" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sounds\dsquake.flac" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sounds\icebrk1a.flac" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sounds\icedth1.flac" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sounds\railgf1.flac" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sounds\spark1.flac" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sounds\spark2.flac" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sounds\spark3.flac" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\sprites\GWANA0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\sprites\PLS1A0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\sprites\PLS1B0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\sprites\PLS1C0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\sprites\PLS1D0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\sprites\PLS1E0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\sprites\PLS1F0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\sprites\PLS1G0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\sprites\PLS2A0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\sprites\PLS2B0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\sprites\PLS2C0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\sprites\PLS2D0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\sprites\PLS2E0.png" />
+    <Image Include="D:\gzdoom custom\wadsrc_extra\static\sprites\minza0.png" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plyca1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plyca2a8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plyca3a7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plyca4a6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plyca5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycb1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycb2b8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycb3b7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycb4b6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycb5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycc1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycc2c8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycc3c7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycc4c6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycc5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycd1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycd2d8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycd3d7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycd4d6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycd5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plyce1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plyce2e8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plyce3e7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plyce4e6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plyce5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycf1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycf2f8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycf3f7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycf4f6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycf5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycg1.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycg2g8.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycg3g7.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycg4g6.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycg5.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plych0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plyci0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycj0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plyck0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycl0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycm0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycn0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plyco0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycp0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycq0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycr0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycs0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plyct0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycu0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycv0.lmp" />
+    <None Include="D:\gzdoom custom\wadsrc_extra\static\sprites\plyc\plycw0.lmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\gzdoom custom\Solution\ZERO_CHECK.vcxproj">
+      <Project>{04ABC131-AD09-38DC-BFC9-4D2E60FEE331}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\src\zdoom.vcxproj">
+      <Project>{3DE52E9D-4F0E-3749-AA97-D64171AA87F5}</Project>
+      <Name>zdoom</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gzdoom custom\Solution\tools\zipdir\zipdir.vcxproj">
+      <Project>{3974EFB5-B72A-3780-896D-398CBD35B950}</Project>
+      <Name>zipdir</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

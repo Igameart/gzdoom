@@ -207,7 +207,7 @@ public:
 		mGradientBottomPlane.Set(0.0f, 0.0f, 0.0f, 0.0f);
 		mSplitTopPlane.Set(0.0f, 0.0f, 0.0f, 0.0f);
 		mSplitBottomPlane.Set(0.0f, 0.0f, 0.0f, 0.0f);
-		mDynColor.Set(0.0f, 0.0f, 0.0f, 0.0f);
+		mDynColor.Set(0.0f, 0.0f, 0.0f, 1.0f);
 
 		mModelMatrix.loadIdentity();
 		mTextureMatrix.loadIdentity();
@@ -360,9 +360,9 @@ public:
 		mSplitBottomPlane.Set((float)bn.X, (float)bn.Y, (float)bottom.negiC, (float)bottom.fD());
 	}
 
-	void SetDynLight(float r, float g, float b)
+	void SetDynLight(float r, float g, float b, float a = 1)
 	{
-		mDynColor.Set(r, g, b, 0);
+		mDynColor.Set(r, g, b, a);
 	}
 
 	void SetObjectColor(PalEntry pe)

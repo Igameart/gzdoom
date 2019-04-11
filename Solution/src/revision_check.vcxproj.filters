@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\gzdoom custom\Solution\CMakeFiles\8f9ae56fdf63d5f7ea335b8aeb17ebf8\revision_check.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gzdoom custom\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\gzdoom custom\Solution\src\CMakeFiles\revision_check" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6E36386B-C692-3C2D-BC43-B6C0FD3667BC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
