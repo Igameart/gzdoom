@@ -1,5 +1,0 @@
-# CMake generation dependency list for this directory.
-D:/CMake/share/cmake-3.14/Modules/CheckCXXCompilerFlag.cmake
-D:/CMake/share/cmake-3.14/Modules/CheckFunctionExists.c
-D:/CMake/share/cmake-3.14/Modules/CheckFunctionExists.cmake
-D:/gzdoom custom/dumb/CMakeLists.txt
